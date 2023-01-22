@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+<title>Manipulate Microsoft Excel with Python - Gerald&#39;s Cabin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+<link href="/zh-cn/2022/officeExcelWithPython" rel="alternate" hreflang="zh-CN" />
+    
+
+
+<meta name="description" content="">
+
+
+
+
+
+    <meta name="description" content="Just some script used at work, mainly about inserting pictures into Excel sheets.Below are something might be useful for other tasks.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Manipulate Microsoft Excel with Python">
+<meta property="og:url" content="https://www.mechgerald.site/2022/officeExcelWithPython">
+<meta property="og:site_name" content="Gerald&#39;s Cabin">
+<meta property="og:description" content="Just some script used at work, mainly about inserting pictures into Excel sheets.Below are something might be useful for other tasks.">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-08-06T15:04:05.000Z">
+<meta property="article:modified_time" content="2022-12-06T16:04:24.021Z">
+<meta property="article:author" content="Gerald">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+<link rel="icon" href="/img/favicon.png">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    Gerald&#39;s Cabin
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/archives">Archives</a>
+            
+            <a class="navbar-item "
+               href="/categories">Categories</a>
+            
+            <a class="navbar-item "
+               href="/tags">Tags</a>
+            
+            <a class="navbar-item "
+               href="/about">About</a>
+            
+            <a class="navbar-item "
+               href="/rss.xml">RSS</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            <!-- 
+            <a class="navbar-item search" title="Search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+             -->
+            
+            
+            <a class="navbar-item" title="GitHub" target="_blank" rel="noopener" href="https://github.com/Mocky-533">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            
+            
+<div class="column is-narrow has-text-centered">
+    <div class="dropdown is-down is-right is-hoverable" style="margin-top: -0.2em;">
+        <div class="dropdown-trigger">
+            <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu7">
+                <span class="icon">
+                    <i class="fas fa-globe"></i>
+                </span>
+                <span>English</span>
+                <span class="icon is-small">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+            </button>
+        </div>
+        <div class="dropdown-menu has-text-left" role="menu">
+            <div class="dropdown-content">
+            
+                <a href="/2022/officeExcelWithPython" class="dropdown-item">
+                    English
+                </a>
+            
+                <a href="/zh-cn/2022/officeExcelWithPython" class="dropdown-item">
+                    简体中文
+                </a>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            Manipulate Microsoft Excel with Python
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            
+                <span>Aug 6 2022</span>
+            
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/code/">code</a>
+        </span>
+        <span class="column is-narrow article-tag">
+            <a class="article-tag-link" href="/tags/python/">#python</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <blockquote>
+<p>Just some script used at work, mainly about inserting pictures into Excel sheets.<br>Below are something might be useful for other tasks.</p>
+</blockquote>
+<span id="more"></span>
+
+<h2><a href="#open-file-amp-switch-to-sheet" class="header-anchor">#</a><span id="open-file-amp-switch-to-sheet">Open file &amp; Switch to sheet</span></h2><p>* The library used here is <a target="_blank" rel="noopener" href="https://www.xlwings.org/">xlwings</a></p>
+<p>Note that the file name and the sheet name should both be in string format.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> xlwings <span class="hljs-keyword">as</span> xw</span><br><span class="line">wb = xw.Book(<span class="hljs-string">&quot;main.xlsx&quot;</span>)</span><br><span class="line">sht = wb.sheets[<span class="hljs-string">&quot;sheet1&quot;</span>]</span><br></pre></td></tr></table></figure>
+
+<h2><a href="#insert-pictures-into-cells" class="header-anchor">#</a><span id="insert-pictures-into-cells">Insert pictures into cells</span></h2><p><a target="_blank" rel="noopener" href="https://docs.xlwings.org/en/stable/api.html?highlight=pictures#xlwings.main.Pictures.add">The function</a> is quite easy to find in the official documentation. Actually if you&apos;ve got the patience to read the document or even search for things relevant for a while, things I write in this post are just garbage. ^.^</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">add(image, link_to_file=<span class="hljs-literal">False</span>, save_with_document=<span class="hljs-literal">True</span>, left=<span class="hljs-literal">None</span>, top=<span class="hljs-literal">None</span>, width=<span class="hljs-literal">None</span>, height=<span class="hljs-literal">None</span>, name=<span class="hljs-literal">None</span>, update=<span class="hljs-literal">False</span>, scale=<span class="hljs-literal">None</span>, <span class="hljs-built_in">format</span>=<span class="hljs-literal">None</span>, anchor=<span class="hljs-literal">None</span>, export_options=<span class="hljs-literal">None</span>)</span><br></pre></td></tr></table></figure>
+
+<h3><a href="#find-cell" class="header-anchor">#</a><span id="find-cell">Find cell</span></h3><p>We can tell from the function above that in order to insert a picture, we need to know the left and top position of the target cell.</p>
+<p>The very first thing to be clear is that in Excel, pictures are not on the same layer as cells or texts inside of cells. So when I say &quot;inserting&quot;, I actually mean &quot;paste&quot; a picture onto the given position.</p>
+<p>Now the question is, what is the position?</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cell = sht.<span class="hljs-built_in">range</span>(<span class="hljs-string">&quot;B1:F2&quot;</span>)</span><br><span class="line">topPos, leftPos = cell.top, cell.left</span><br></pre></td></tr></table></figure>
+
+<p>Simple as that.</p>
+<p>One thing only. If the target cell is a merged cell, put the full range inside <code>sht.range()</code> method. -&gt; <a target="_blank" rel="noopener" href="https://github.com/xlwings/xlwings/issues/1709">link</a></p>
+<h3><a href="#resize" class="header-anchor">#</a><span id="resize">Resize</span></h3><p>When inserting a specific image file into cells, it&apos;s rather common that the sizes don&apos;t match. Resizing is a must here, well for me at least.</p>
+<p>You can simply resize the picture into the target cell size, in spite of the aspect ratio. Or you can scale the picture up or down to match the cell size and keep the aspect ratio as it is. Either way, sizes, are needed, for both cell and image.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cellW, cellH = cell.width, cell.height</span><br></pre></td></tr></table></figure>
+
+<p>As for image size, there&apos;re millions of ways to get access to it.</p>
+<h2><a href="#insert-text-into-cells" class="header-anchor">#</a><span id="insert-text-into-cells">Insert text into cells</span></h2><p>Compared with inserting images, inserting text is way easier.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sht.<span class="hljs-built_in">range</span>(<span class="hljs-string">f&quot;<span class="hljs-subst">{cell_range}</span>&quot;</span>).value = <span class="hljs-string">f&quot;<span class="hljs-subst">{your_text}</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>Voila!</p>
+<h2><a href="#ending" class="header-anchor">#</a><span id="ending">Ending</span></h2><p>Yeah, don&apos;t forget to save and close the Excel file in the end. Or just save the file so as to make sure pictures are placed just fine.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wb.save()</span><br><span class="line">wb.close()</span><br></pre></td></tr></table></figure>
+
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/python/">#python</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/2022/xpathNotes">Xpath Notes</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/2022/pythonchallenge2">Python Challenge Notes (Part 2)</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+<!-- 
+<div class="sharebox">
+    
+<div class="notification is-danger">
+    You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.
+</div>
+
+</div>
+
+
+
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
+    
+<div id="disqus_thread">
+    
+    <div class="notification is-danger">
+        You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.
+    </div>
+    
+    <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+ -->
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2023 Gerald&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            <div class="column is-narrow">
+                <div class="columns is-mobile is-multiline is-centered">
+                
+                    
+                <a class="column is-narrow has-text-black" title="GitHub" target="_blank" rel="noopener" href="https://github.com/Mocky-533">
+                    
+                    <i class="fab fa-github"></i>
+                    
+                </a>
+                
+                    
+                <a class="column is-narrow has-text-black" title="Instagram" target="_blank" rel="noopener" href="https://www.instagram.com/maxwellwu435/">
+                    
+                    <i class="fab fa-instagram"></i>
+                    
+                </a>
+                
+                    
+                <a class="column is-narrow has-text-black" title="Telegram" target="_blank" rel="noopener" href="https://t.me/+nfP8Ly2pi800ZGNl">
+                    
+                    <i class="fab fa-telegram"></i>
+                    
+                </a>
+                
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("en-AU");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+</script>
+
+    
+    
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hljs .clipboard-btn:hover {
+          color: #8a8a8a;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+        clipboard.on('success', function(e) {
+          e.clearSelection();
+        })
+      })
+    </script>
+
+    
+    
+
+    
+
+
+
+<script src="/js/script.js"></script>
+
+
+    <!-- 
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+     -->
+</body>
+</html>

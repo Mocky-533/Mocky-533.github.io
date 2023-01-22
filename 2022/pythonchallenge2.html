@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+<title>Python Challenge Notes (Part 2) - Gerald&#39;s Cabin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+<link href="/zh-cn/2022/pythonchallenge2" rel="alternate" hreflang="zh-CN" />
+    
+
+
+<meta name="description" content="">
+
+
+
+
+
+    <meta name="description" content="Again, just some notesComplete source code here">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python Challenge Notes (Part 2)">
+<meta property="og:url" content="https://www.mechgerald.site/2022/pythonchallenge2">
+<meta property="og:site_name" content="Gerald&#39;s Cabin">
+<meta property="og:description" content="Again, just some notesComplete source code here">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.mechgerald.site/img/level21.png">
+<meta property="og:image" content="https://www.mechgerald.site/img/greypixel.png">
+<meta property="og:image" content="https://www.mechgerald.site/img/upper_right.png">
+<meta property="og:image" content="https://www.mechgerald.site/img/lower_left.png">
+<meta property="og:image" content="https://www.mechgerald.site/img/level27.png">
+<meta property="og:image" content="https://www.mechgerald.site/img/up.png">
+<meta property="og:image" content="https://www.mechgerald.site/img/level33_1.png">
+<meta property="og:image" content="https://www.mechgerald.site/img/level33_2.png">
+<meta property="article:published_time" content="2022-04-21T05:30:15.000Z">
+<meta property="article:modified_time" content="2022-12-06T16:09:01.543Z">
+<meta property="article:author" content="Gerald">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.mechgerald.site/img/level21.png">
+
+
+
+
+
+<link rel="icon" href="/img/favicon.png">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    Gerald&#39;s Cabin
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/archives">Archives</a>
+            
+            <a class="navbar-item "
+               href="/categories">Categories</a>
+            
+            <a class="navbar-item "
+               href="/tags">Tags</a>
+            
+            <a class="navbar-item "
+               href="/about">About</a>
+            
+            <a class="navbar-item "
+               href="/rss.xml">RSS</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            <!-- 
+            <a class="navbar-item search" title="Search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+             -->
+            
+            
+            <a class="navbar-item" title="GitHub" target="_blank" rel="noopener" href="https://github.com/Mocky-533">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            
+            
+<div class="column is-narrow has-text-centered">
+    <div class="dropdown is-down is-right is-hoverable" style="margin-top: -0.2em;">
+        <div class="dropdown-trigger">
+            <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu7">
+                <span class="icon">
+                    <i class="fas fa-globe"></i>
+                </span>
+                <span>English</span>
+                <span class="icon is-small">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+            </button>
+        </div>
+        <div class="dropdown-menu has-text-left" role="menu">
+            <div class="dropdown-content">
+            
+                <a href="/2022/pythonchallenge2" class="dropdown-item">
+                    English
+                </a>
+            
+                <a href="/zh-cn/2022/pythonchallenge2" class="dropdown-item">
+                    简体中文
+                </a>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            Python Challenge Notes (Part 2)
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            
+                <span>Apr 21 2022</span>
+            
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/code/">code</a>
+        </span>
+        <span class="column is-narrow article-tag">
+            <a class="article-tag-link" href="/tags/python/">#python</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <blockquote>
+<p>Again, just some notes<br>Complete source code <a target="_blank" rel="noopener" href="https://github.com/Mocky-533/pythonchallenge-solutions">here</a></p>
+</blockquote>
+<span id="more"></span>
+<!--toc-->
+
+<h2><a href="#contents" class="header-anchor">#</a><span id="contents">Contents</span></h2><table>
+<tr>
+    <td><a href="#level-21">Level 21</a></td>
+    <td><a href="#level-22">Level 22</a></td>
+    <td><a href="#level-23">Level 23</a></td>
+    <td><a href="#level-24">Level 24</a></td>
+    <td><a href="#level-25">Level 25</a></td>
+</tr>
+<tr>
+    <td><a href="#level-26">Level 26</a></td>
+    <td><a href="#level-27">Level 27</a></td>
+    <td><a href="#level-28">Level 28</a></td>
+    <td><a href="#level-29">Level 29</a></td>
+    <td><a href="#level-30">Level 30</a></td>
+</tr>
+<tr>
+    <td><a href="#level-31">Level 31</a></td>
+    <td><a href="#level-32">Level 32</a></td>
+    <td><a href="#level-33">Level 33</a></td>
+</tr>
+</table>
+
+<h2><a href="#level-21" class="header-anchor">#</a><span id="level-21">Level 21</span></h2><blockquote>
+<p>Yes! This is really level 21 in here.<br>And yes, After you solve it, you&apos;ll be in level 22!</p>
+<p>Now for the level:</p>
+<ul>
+<li>We used to play this game when we were kids</li>
+<li>When I had no idea what to do, I looked backwards.</li>
+</ul>
+</blockquote>
+<p>There&apos;s this <code>package.pack</code> file inside the zip. First open it in HEX, maybe the file header is familiar.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;assets/21/package.pack&quot;</span>, <span class="hljs-string">&apos;rb&apos;</span>) <span class="hljs-keyword">as</span> f:</span><br><span class="line">    data = f.read()</span><br><span class="line"><span class="hljs-built_in">print</span>(data[:<span class="hljs-number">20</span>].<span class="hljs-built_in">hex</span>())</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>789c000a40f5bf789c000740f8bf789c000640f9</p>
+</blockquote>
+<p><code>78 9c</code> is very likely file header of a zlib file. -&gt; <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/9050260/what-does-a-zlib-header-look-like">source</a></p>
+<p>Now decompress the <code>data</code> variable with zlib.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> zlib</span><br><span class="line">...</span><br><span class="line">data = zlib.decompress(data)</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>789c000740f8bf789c000640f9bf789c00ff3f00</p>
+</blockquote>
+<p>Again, <code>78 9c</code>. Maybe it&apos;s a file compressed multiple times.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> zlib</span><br><span class="line"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&apos;assets/21/package.pack&apos;</span>, <span class="hljs-string">&apos;rb&apos;</span>) <span class="hljs-keyword">as</span> f:</span><br><span class="line">    data = f.read()</span><br><span class="line"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:</span><br><span class="line">    <span class="hljs-keyword">if</span> data[:<span class="hljs-number">2</span>].<span class="hljs-built_in">hex</span>() == <span class="hljs-string">&apos;789c&apos;</span>:</span><br><span class="line">        data = zlib.decompress(data)</span><br><span class="line">    <span class="hljs-keyword">else</span>:</span><br><span class="line">        <span class="hljs-keyword">break</span></span><br><span class="line"><span class="hljs-built_in">print</span>(data[:<span class="hljs-number">20</span>].<span class="hljs-built_in">hex</span>())</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>425a683931415926535991e82f2b0076a97fffff</p>
+</blockquote>
+<p>Now, <code>42 5a</code>. It&apos;s bzip compressed file. -&gt; <a target="_blank" rel="noopener" href="https://www.garykessler.net/library/file_sigs.html">source</a></p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> zlib, bz2</span><br><span class="line"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&apos;assets/21/package.pack&apos;</span>, <span class="hljs-string">&apos;rb&apos;</span>) <span class="hljs-keyword">as</span> f:</span><br><span class="line">    data = f.read()</span><br><span class="line"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:</span><br><span class="line">    <span class="hljs-keyword">if</span> data[:<span class="hljs-number">2</span>].<span class="hljs-built_in">hex</span>() == <span class="hljs-string">&apos;789c&apos;</span>:</span><br><span class="line">        data = zlib.decompress(data)</span><br><span class="line">    <span class="hljs-keyword">elif</span> data[:<span class="hljs-number">2</span>].<span class="hljs-built_in">hex</span>() == <span class="hljs-string">&quot;425a&quot;</span>:</span><br><span class="line">        data = bz2.decompress(data)</span><br><span class="line">    <span class="hljs-keyword">else</span>:</span><br><span class="line">        <span class="hljs-keyword">break</span></span><br><span class="line"><span class="hljs-built_in">print</span>(data[:<span class="hljs-number">20</span>].<span class="hljs-built_in">hex</span>())</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>808d96cbb572a70006587ada664f19ee846ba464</p>
+</blockquote>
+<p><code>80 8d</code> doesn&apos;t seem like any file header. Oh right, it said <code>When I had no idea what to do, I looked backwards.</code></p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> zlib, bz2</span><br><span class="line"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&apos;assets/21/package.pack&apos;</span>, <span class="hljs-string">&apos;rb&apos;</span>) <span class="hljs-keyword">as</span> f:</span><br><span class="line">    data = f.read()</span><br><span class="line"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:</span><br><span class="line">    <span class="hljs-keyword">if</span> data[:<span class="hljs-number">2</span>].<span class="hljs-built_in">hex</span>() == <span class="hljs-string">&apos;789c&apos;</span>:</span><br><span class="line">        data = zlib.decompress(data)</span><br><span class="line">    <span class="hljs-keyword">elif</span> data[:<span class="hljs-number">2</span>].<span class="hljs-built_in">hex</span>() == <span class="hljs-string">&quot;425a&quot;</span>:</span><br><span class="line">        data = bz2.decompress(data)</span><br><span class="line">    <span class="hljs-keyword">elif</span> data[-<span class="hljs-number">2</span>:].<span class="hljs-built_in">hex</span>() == <span class="hljs-string">&quot;9c78&quot;</span>:</span><br><span class="line">        data = zlib.decompress(data[::-<span class="hljs-number">1</span>])</span><br><span class="line">    <span class="hljs-keyword">elif</span> data[-<span class="hljs-number">2</span>:].<span class="hljs-built_in">hex</span>() == <span class="hljs-string">&quot;5a42&quot;</span>:</span><br><span class="line">        data = bz2.decompress(data[::-<span class="hljs-number">1</span>])</span><br><span class="line">    <span class="hljs-keyword">else</span>:</span><br><span class="line">        <span class="hljs-keyword">break</span></span><br><span class="line"><span class="hljs-built_in">print</span>(data[:<span class="hljs-number">20</span>])</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>b&apos;sgol ruoy ta kool&apos;</p>
+</blockquote>
+<p>The output is &quot;look at your logs&quot; in reverse. Logs, what are logs when decompressing?</p>
+<p>I had to search for this online. Turns out, here the &quot;logs&quot; means that you&apos;re supposed to record every decompression. hahaha</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> zlib, bz2</span><br><span class="line"><span class="hljs-keyword">from</span> collections <span class="hljs-keyword">import</span> Counter</span><br><span class="line"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&apos;assets/21/package.pack&apos;</span>, <span class="hljs-string">&apos;rb&apos;</span>) <span class="hljs-keyword">as</span> f:</span><br><span class="line">    data = f.read()</span><br><span class="line">logs = []</span><br><span class="line"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:</span><br><span class="line">    <span class="hljs-keyword">if</span> data[:<span class="hljs-number">2</span>].<span class="hljs-built_in">hex</span>() == <span class="hljs-string">&apos;789c&apos;</span>:</span><br><span class="line">        data = zlib.decompress(data)</span><br><span class="line">        logs.append(<span class="hljs-string">&quot;*&quot;</span>)</span><br><span class="line">    <span class="hljs-keyword">elif</span> data[:<span class="hljs-number">2</span>].<span class="hljs-built_in">hex</span>() == <span class="hljs-string">&quot;425a&quot;</span>:</span><br><span class="line">        data = bz2.decompress(data)</span><br><span class="line">        logs.append(<span class="hljs-string">&quot;@&quot;</span>)</span><br><span class="line">    <span class="hljs-keyword">elif</span> data[-<span class="hljs-number">2</span>:].<span class="hljs-built_in">hex</span>() == <span class="hljs-string">&quot;9c78&quot;</span>:</span><br><span class="line">        data = zlib.decompress(data[::-<span class="hljs-number">1</span>])</span><br><span class="line">        logs.append(<span class="hljs-string">&quot;#&quot;</span>)</span><br><span class="line">    <span class="hljs-keyword">elif</span> data[-<span class="hljs-number">2</span>:].<span class="hljs-built_in">hex</span>() == <span class="hljs-string">&quot;5a42&quot;</span>:</span><br><span class="line">        data = bz2.decompress(data[::-<span class="hljs-number">1</span>])</span><br><span class="line">        logs.append(<span class="hljs-string">&quot;+&quot;</span>)</span><br><span class="line">    <span class="hljs-keyword">else</span>:</span><br><span class="line">        <span class="hljs-keyword">break</span></span><br><span class="line">count = Counter(logs)</span><br><span class="line"><span class="hljs-built_in">print</span>(count)</span><br></pre></td></tr></table></figure>
+
+<p>What was stored in the <code>logs</code> variable made no sense at all. So I used <code>Counter</code> to display the occurence of each charactor. Could be helpful, I thought.</p>
+<blockquote>
+<p>Counter({&apos;*&apos;: 423, &apos;@&apos;: 300, &apos;#&apos;: 9})</p>
+</blockquote>
+<p>Seems charactor <code>#</code> is the separator.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">lines = <span class="hljs-string">&quot;&quot;</span>.join(logs).split(<span class="hljs-string">&quot;#&quot;</span>)</span><br><span class="line"><span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> lines:</span><br><span class="line">    <span class="hljs-built_in">print</span>(line)</span><br></pre></td></tr></table></figure>
+
+<p>The output looks like this.</p>
+<img src="/img/level21.png" alt="level21">
+
+<p>There you have it~</p>
+<p>Well, as a matter of fact, it&apos;s better to use bytes format for <code>if...elif...else</code> conditional execution. And it saves a load of computing as well. For example the bytes format of <code>789c</code> should be <code>b&apos;x\x9c&apos;</code>. HEX format did help with searching for what file headers should look like, though.</p>
+<h2><a href="#level-22" class="header-anchor">#</a><span id="level-22">Level 22</span></h2><p>Woo, what a week! Now back to the challenge</p>
+<p>The comment says &quot;or maybe white.gif would be more bright&quot;. Change the url to <code>.../white.gif</code>. It&apos;s a black image.</p>
+<p>Well, not exactly. With zooming in several times, a grey (or &quot;not that black&quot;) pixel around the center of the image can be noticed.</p>
+<img src="/img/greypixel.png" alt="grey pixel">
+
+<p>And the image is actually a gif file with multiple frames, unlike <code>mozart.gif</code> from <a target="_blank" rel="noopener" href="http://www.pythonchallenge.com/pc/return/mozart.html">level 16</a>, which, on the contrary, contains only 1 frame.</p>
+<p>First we need to know the modes of the frames.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image, ImageSequence</span><br><span class="line"></span><br><span class="line">pic = Image.<span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;assets/white.gif&quot;</span>)</span><br><span class="line">frames = ImageSequence.Iterator(pic)</span><br><span class="line"><span class="hljs-keyword">for</span> frame <span class="hljs-keyword">in</span> frames:</span><br><span class="line">    <span class="hljs-built_in">print</span>(frame.mode)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>P<br>RGB<br>RGB<br>...</p>
+</blockquote>
+<p>There you have it. The first frame is a picture of 8-bit mode. -&gt; <a target="_blank" rel="noopener" href="https://pillow.readthedocs.io/en/stable/handbook/concepts.html#modes">source</a> And the rest of it, all RGB mode</p>
+<p>So how do we find the &quot;grey pixels&quot; when the frames are in different modes? There&apos;s a <a target="_blank" rel="noopener" href="https://pillow.readthedocs.io/en/stable/reference/ImageStat.html">ImageStat Module</a> which can be use to calculate various statistics of a picture. Let&apos;s try it out.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image, ImageSequence, ImageStat</span><br><span class="line"></span><br><span class="line">pic = Image.<span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;assets/white.gif&quot;</span>)</span><br><span class="line">frames = ImageSequence.Iterator(pic)</span><br><span class="line"><span class="hljs-keyword">for</span> frame <span class="hljs-keyword">in</span> frames:</span><br><span class="line">    stat = ImageStat.Stat(frame)</span><br><span class="line">    <span class="hljs-built_in">print</span>(stat.extrema)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[(0, 8)]<br>[(0, 8), (0, 8), (0, 8)]<br>[(0, 8), (0, 8), (0, 8)]<br>[(0, 8), (0, 8), (0, 8)]<br>[(0, 8), (0, 8), (0, 8)]<br>...</p>
+</blockquote>
+<p>So the values of &quot;grey pixels&quot; come in two different ways, <code>8</code> and <code>(8, 8, 8)</code>. Now let&apos;s get the coordinates of the &quot;grey pixels&quot;.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image, ImageSequence</span><br><span class="line"></span><br><span class="line">pic = Image.<span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;assets/white.gif&quot;</span>)</span><br><span class="line">frames = ImageSequence.Iterator(pic)</span><br><span class="line">coords = []</span><br><span class="line"><span class="hljs-keyword">for</span> frame <span class="hljs-keyword">in</span> frames:</span><br><span class="line">    <span class="hljs-keyword">for</span> n_y <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(frame.size[<span class="hljs-number">1</span>]):</span><br><span class="line">        pixels = [frame.getpixel((n_x, n_y)) <span class="hljs-keyword">for</span> n_x <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(frame.size[<span class="hljs-number">0</span>])]</span><br><span class="line">        <span class="hljs-keyword">try</span>:</span><br><span class="line">            pos_x = pixels.index(<span class="hljs-number">8</span>)</span><br><span class="line">            pos_y = n_y</span><br><span class="line">            coords.append([pos_x, pos_y])</span><br><span class="line">            <span class="hljs-keyword">break</span></span><br><span class="line">        <span class="hljs-keyword">except</span> ValueError:</span><br><span class="line">            <span class="hljs-keyword">try</span>:</span><br><span class="line">                pos_x = pixels.index((<span class="hljs-number">8</span>, <span class="hljs-number">8</span>, <span class="hljs-number">8</span>))</span><br><span class="line">                pos_y = n_y</span><br><span class="line">                coords.append([pos_x, pos_y])</span><br><span class="line">            <span class="hljs-keyword">except</span> ValueError:</span><br><span class="line">                <span class="hljs-keyword">pass</span></span><br><span class="line"><span class="hljs-built_in">print</span>(coords)</span><br></pre></td></tr></table></figure>
+
+<p>Variable <code>coords</code> is a two dimensional list, and its length is 133. The <code>white.gif</code> itself contains 133 frames as well. Seems we&apos;ve gotten all the coordinates. Now let&apos;s take a deep look at the list.</p>
+<p>All the values are within 2px distance to (100, 100). And value (100, 100) shows up relatively fewer times. Oh, don&apos;t forget about the picture in <code>copper.html</code>, it&apos;s something like a joystick. Maybe the coordinates represent directions.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">newpic = Image.new(<span class="hljs-string">&quot;1&quot;</span>, (<span class="hljs-number">1000</span>, <span class="hljs-number">100</span>))</span><br><span class="line">px = py = <span class="hljs-number">0</span></span><br><span class="line"><span class="hljs-keyword">for</span> coord <span class="hljs-keyword">in</span> coords:</span><br><span class="line">    x = coord[<span class="hljs-number">0</span>] - <span class="hljs-number">100</span></span><br><span class="line">    y = coord[<span class="hljs-number">1</span>] - <span class="hljs-number">100</span></span><br><span class="line">    <span class="hljs-keyword">if</span> x == y == <span class="hljs-number">0</span>:</span><br><span class="line">        x += <span class="hljs-number">100</span></span><br><span class="line">    px += x</span><br><span class="line">    py += y</span><br><span class="line">    newpic.putpixel((px, py), <span class="hljs-number">1</span>)</span><br><span class="line">newpic.show()</span><br></pre></td></tr></table></figure>
+
+<p>And now we get the url for the next level.</p>
+<h2><a href="#level-23" class="header-anchor">#</a><span id="level-23">Level 23</span></h2><p>A bull. Page title is <code>what is this module?</code>. And some text in the source code.</p>
+<blockquote>
+<p>TODO: do you owe someone an apology? now it is a good time to<br>tell him that you are sorry. Please show good manners although<br>it has nothing to do with this level.<br>----------<br>it can&apos;t find it. this is an undocumented module.<br>&apos;va gur snpr bs jung?&apos;</p>
+</blockquote>
+<p>Remember? In the end of <a href="/2022/pythonchallenge#level-19">level 19</a>, we get a portrait of Leopold Mozart. And he says, &quot;Now you should apologize&quot;. Maybe now is the time we say sorry.</p>
+<p>Well, after trying for some times, I realized that it&apos;s being serious this time. It does have nothing to do with this level.</p>
+<p>So let&apos;s focus on what&apos;s left here.</p>
+<p>Seems that <code>&apos;va gur snpr bs jung&apos;</code> should be a instruction. &quot;What is this module?&quot; If you are familiar with python, you&apos;ll know there&apos;s a famous poem called &quot;The Zen of Python&quot;. You can get the poem simply by running <code>import this</code>. Here the module name is exactly &quot;this&quot;. Coincidence?</p>
+<p>And if you open <code>this.py</code> which is in the python <code>lib</code> folder. You&apos;ll see the poem itself is not stored as it shows.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="hljs-string">&quot;&quot;&quot;Gur Mra bs Clguba, ol Gvz Crgref</span></span><br><span class="line"><span class="hljs-string"></span></span><br><span class="line"><span class="hljs-string">Ornhgvshy vf orggre guna htyl.</span></span><br><span class="line"><span class="hljs-string">Rkcyvpvg vf orggre guna vzcyvpvg.</span></span><br><span class="line"><span class="hljs-string">Fvzcyr vf orggre guna pbzcyrk.</span></span><br><span class="line"><span class="hljs-string">Pbzcyrk vf orggre guna pbzcyvpngrq.</span></span><br><span class="line"><span class="hljs-string">Syng vf orggre guna arfgrq.</span></span><br><span class="line"><span class="hljs-string">Fcnefr vf orggre guna qrafr.</span></span><br><span class="line"><span class="hljs-string">Ernqnovyvgl pbhagf.</span></span><br><span class="line"><span class="hljs-string">Fcrpvny pnfrf nera&apos;g fcrpvny rabhtu gb oernx gur ehyrf.</span></span><br><span class="line"><span class="hljs-string">Nygubhtu cenpgvpnyvgl orngf chevgl.</span></span><br><span class="line"><span class="hljs-string">Reebef fubhyq arire cnff fvyragyl.</span></span><br><span class="line"><span class="hljs-string">Hayrff rkcyvpvgyl fvyraprq.</span></span><br><span class="line"><span class="hljs-string">Va gur snpr bs nzovthvgl, ershfr gur grzcgngvba gb thrff.</span></span><br><span class="line"><span class="hljs-string">Gurer fubhyq or bar-- naq cersrenoyl bayl bar --boivbhf jnl gb qb vg.</span></span><br><span class="line"><span class="hljs-string">Nygubhtu gung jnl znl abg or boivbhf ng svefg hayrff lbh&apos;er Qhgpu.</span></span><br><span class="line"><span class="hljs-string">Abj vf orggre guna arire.</span></span><br><span class="line"><span class="hljs-string">Nygubhtu arire vf bsgra orggre guna *evtug* abj.</span></span><br><span class="line"><span class="hljs-string">Vs gur vzcyrzragngvba vf uneq gb rkcynva, vg&apos;f n onq vqrn.</span></span><br><span class="line"><span class="hljs-string">Vs gur vzcyrzragngvba vf rnfl gb rkcynva, vg znl or n tbbq vqrn.</span></span><br><span class="line"><span class="hljs-string">Anzrfcnprf ner bar ubaxvat terng vqrn -- yrg&apos;f qb zber bs gubfr!&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">d = {}</span><br><span class="line"><span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> (<span class="hljs-number">65</span>, <span class="hljs-number">97</span>):</span><br><span class="line">    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">26</span>):</span><br><span class="line">        d[<span class="hljs-built_in">chr</span>(i+c)] = <span class="hljs-built_in">chr</span>((i+<span class="hljs-number">13</span>) % <span class="hljs-number">26</span> + c)</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&quot;</span>.join([d.get(c, c) <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> s]))</span><br></pre></td></tr></table></figure>
+
+<p>It requires shifting the ascii value of a letter to translate. Now we apply the same method to <code>&apos;va gur snpr bs jung&apos;</code></p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="hljs-string">&apos;va gur snpr bs jung&apos;</span></span><br><span class="line">d = {}</span><br><span class="line"><span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> (<span class="hljs-number">65</span>, <span class="hljs-number">97</span>):</span><br><span class="line">    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">26</span>):</span><br><span class="line">        d[<span class="hljs-built_in">chr</span>(i+c)] = <span class="hljs-built_in">chr</span>((i+<span class="hljs-number">13</span>) % <span class="hljs-number">26</span> + c)</span><br><span class="line"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&quot;</span>.join([d.get(c, c) <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> s]))</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>in the face of what</p>
+</blockquote>
+<p>The answer is in the poem. Find it yourself~</p>
+<h2><a href="#level-24" class="header-anchor">#</a><span id="level-24">Level 24</span></h2><p>Page title is &quot;From top to bottom&quot;. And the picture name is <code>maze.png</code>.</p>
+<p>Path finding? A perfect chance to try BFS and DFS algorithm (maybe A* as well). If you know nothing about these two algorithm, MIT OpenCourseWare provided great lessons for both <a target="_blank" rel="noopener" href="https://youtu.be/oFVYVzlvk9c">BFS</a> and <a target="_blank" rel="noopener" href="https://youtu.be/IBfWDYSffUU">DFS</a> algorithm.</p>
+<p>Zoom in <code>maze.png</code> a few times. there&apos;re only 2 black pixels in the outer circle. One is on the upper right corner, the other lower left. It&apos;s very likely that theses 2 pixels are entrance and exit. White pixels being walls, feels a little different from usual.</p>
+<p>Evem though I&apos;ve become familiar with pillow recently, I am still gonna use opencv this time. lol.</p>
+<p>First, we need the coordinates of entrance and exit.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> cv2</span><br><span class="line"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="hljs-string">&quot;assets/maze.png&quot;</span>)</span><br><span class="line">width, height, _ = img.shape</span><br><span class="line">black = np.array([<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>])</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(width):</span><br><span class="line">    <span class="hljs-keyword">if</span> np.array_equal(img[<span class="hljs-number">0</span>][i], black):</span><br><span class="line">        <span class="hljs-built_in">print</span>(i)</span><br><span class="line"><span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(width):</span><br><span class="line">    <span class="hljs-keyword">if</span> np.array_equal(img[<span class="hljs-number">640</span>][j], black):</span><br><span class="line">        <span class="hljs-built_in">print</span>(j)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>639<br>1</p>
+</blockquote>
+<p>Therefore the coordinates are <code>(0, 639)</code> and <code>(640, 1)</code>. Let&apos;s just assume the entrance is the former one and exit the latter.</p>
+<h3><a href="#bfs-algorithm" class="header-anchor">#</a><span id="bfs-algorithm">BFS Algorithm</span></h3><p>As for the FIFO queue used in the BFS algorithm, either <a target="_blank" rel="noopener" href="https://docs.python.org/3/library/queue.html">Queue Module</a> or <a target="_blank" rel="noopener" href="https://docs.python.org/3/library/collections.html#collections.deque">deque class in collections module</a> works just fine. Even a simple python list class would do the work as well.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> cv2</span><br><span class="line"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">inpic</span>(<span class="hljs-params">coord</span>):</span></span><br><span class="line">    x = <span class="hljs-number">0</span> &lt;= coord[<span class="hljs-number">0</span>] &lt; <span class="hljs-number">641</span></span><br><span class="line">    y = <span class="hljs-number">0</span> &lt;= coord[<span class="hljs-number">1</span>] &lt; <span class="hljs-number">641</span></span><br><span class="line">    <span class="hljs-keyword">return</span> x <span class="hljs-keyword">and</span> y</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">valid_check</span>(<span class="hljs-params">coord, image, l</span>):</span></span><br><span class="line">    white = np.array([<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>])</span><br><span class="line">    <span class="hljs-keyword">return</span> inpic(coord) <span class="hljs-keyword">and</span> coord <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> l <span class="hljs-keyword">and</span> <span class="hljs-keyword">not</span> np.array_equal(image[coord], white)</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">BFS</span>(<span class="hljs-params">img: np.ndarray, entrance: np.ndarray, exit:np.ndarray</span>):</span></span><br><span class="line">    directions = [(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>), (<span class="hljs-number">0</span>, <span class="hljs-number">1</span>), (-<span class="hljs-number">1</span>, <span class="hljs-number">0</span>), (<span class="hljs-number">0</span>, -<span class="hljs-number">1</span>)]</span><br><span class="line">    queue, visited = [exit], {}</span><br><span class="line">    <span class="hljs-keyword">while</span> queue:</span><br><span class="line">        current = queue.pop(<span class="hljs-number">0</span>) <span class="hljs-comment"># get the head of the queue</span></span><br><span class="line">        <span class="hljs-keyword">if</span> current == entrance:</span><br><span class="line">            <span class="hljs-keyword">break</span> <span class="hljs-comment"># early stop</span></span><br><span class="line">        <span class="hljs-keyword">for</span> <span class="hljs-built_in">dir</span> <span class="hljs-keyword">in</span> directions:</span><br><span class="line">            pos = (current[<span class="hljs-number">0</span>] + <span class="hljs-built_in">dir</span>[<span class="hljs-number">0</span>], current[<span class="hljs-number">1</span>] + <span class="hljs-built_in">dir</span>[<span class="hljs-number">1</span>])</span><br><span class="line">            <span class="hljs-keyword">if</span> valid_check(pos, img, visited):</span><br><span class="line">                visited[pos] = current <span class="hljs-comment"># link the surrounding pixels to central pixel</span></span><br><span class="line">                queue.append(pos)</span><br><span class="line">    path = []</span><br><span class="line">    <span class="hljs-keyword">while</span> <span class="hljs-keyword">not</span> np.array_equal(current, exit):</span><br><span class="line">        path.append(current)</span><br><span class="line">        current = visited[current] <span class="hljs-comment"># reverse to find the path</span></span><br><span class="line">    <span class="hljs-keyword">return</span> path</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:</span><br><span class="line">    img = cv2.imread(<span class="hljs-string">&quot;assets/maze.png&quot;</span>)</span><br><span class="line">    <span class="hljs-comment"># width, height, _ = img.shape</span></span><br><span class="line">    <span class="hljs-comment"># black = np.array([0, 0, 0])</span></span><br><span class="line">    <span class="hljs-comment"># for i in range(width):</span></span><br><span class="line">    <span class="hljs-comment">#     if np.array_equal(img[0][i], black):</span></span><br><span class="line">    <span class="hljs-comment">#         print(i) # 639</span></span><br><span class="line">    <span class="hljs-comment"># for j in range(width):</span></span><br><span class="line">    <span class="hljs-comment">#     if np.array_equal(img[640][j], black):</span></span><br><span class="line">    <span class="hljs-comment">#         print(j) # 1</span></span><br><span class="line">    entrance, exit = (<span class="hljs-number">0</span>, <span class="hljs-number">639</span>), (<span class="hljs-number">640</span>, <span class="hljs-number">1</span>)</span><br><span class="line">    path = BFS(img=img, entrance=entrance, exit=exit)</span><br><span class="line">    path.append(exit)</span><br><span class="line">    <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;First 20 coordinates:\n<span class="hljs-subst">{path[:<span class="hljs-number">20</span>]}</span>&quot;</span>)</span><br><span class="line">    <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Last 20 coordinates:\n<span class="hljs-subst">{path[-<span class="hljs-number">20</span>:]}</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>First 20 coordinates:<br>[(0, 639), (1, 639), (2, 639), (3, 639), (4, 639), (5, 639), (6, 639), (7, 639), (8, 639), (9, 639), (10, 639), (11, 639), (11, 638), (11, 637), (11, 636), (11, 635), (12, 635), (13, 635), (14, 635), (15, 635)]<br>Last 20 coordinates:<br>[(637, 9), (636, 9), (635, 9), (635, 8), (635, 7), (635, 6), (635, 5), (635, 4), (635, 3), (634, 3), (633, 3), (633, 2), (633, 1), (634, 1), (635, 1), (636, 1), (637, 1), (638, 1), (639, 1), (640, 1)]</p>
+</blockquote>
+<p>Combined with <code>maze.png</code>, these coordinates seems like a valid path. You can print out more coordinates to inspect.</p>
+<p><img src="/img/upper_right.png" alt="upper right corner"><img src="/img/lower_left.png" alt="lower left corner"></p>
+<h3><a href="#dfs-algorithm" class="header-anchor">#</a><span id="dfs-algorithm">DFS Algorithm</span></h3><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">DFS_sub</span>(<span class="hljs-params">img: np.ndarray, current, entrance: np.array, queue: <span class="hljs-built_in">list</span>, visited: <span class="hljs-built_in">dict</span></span>):</span></span><br><span class="line">    directions = [(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>), (<span class="hljs-number">0</span>, <span class="hljs-number">1</span>), (-<span class="hljs-number">1</span>, <span class="hljs-number">0</span>), (<span class="hljs-number">0</span>, -<span class="hljs-number">1</span>)]</span><br><span class="line">    <span class="hljs-keyword">for</span> <span class="hljs-built_in">dir</span> <span class="hljs-keyword">in</span> directions:</span><br><span class="line">        pos = (current[<span class="hljs-number">0</span>] + <span class="hljs-built_in">dir</span>[<span class="hljs-number">0</span>], current[<span class="hljs-number">1</span>] + <span class="hljs-built_in">dir</span>[<span class="hljs-number">1</span>])</span><br><span class="line">        <span class="hljs-keyword">if</span> valid_check(pos, img, visited):</span><br><span class="line">            visited[pos] = current</span><br><span class="line">            queue.append(pos)</span><br><span class="line">    <span class="hljs-keyword">return</span> queue, visited</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">DFS</span>(<span class="hljs-params">img, entrance, exit</span>):</span></span><br><span class="line">    queue, visited, path = [exit], {}, []</span><br><span class="line">    <span class="hljs-keyword">while</span> queue:</span><br><span class="line">        current = queue.pop()</span><br><span class="line">        <span class="hljs-keyword">if</span> current == entrance:</span><br><span class="line">            <span class="hljs-keyword">break</span></span><br><span class="line">        queue, visited = DFS_sub(img, current, entrance, queue, visited)</span><br><span class="line">    <span class="hljs-keyword">while</span> <span class="hljs-keyword">not</span> np.array_equal(current, exit):</span><br><span class="line">        path.append(current)</span><br><span class="line">        current = visited[current]</span><br><span class="line">    <span class="hljs-keyword">return</span> path</span><br></pre></td></tr></table></figure>
+
+<h3><a href="#what-39-s-next" class="header-anchor">#</a><span id="what-39-s-next">What&apos;s next?</span></h3><p>To be honest, I had no idea what to do next. So I did some search online. Turns out what really needed is not the coordinates, it&apos;s the RGB value of these pixels. To be accurate, the R(ed) value. Take 1 non-zero value in consective 2 pixels (if both are 0, then take 0), save the values in bytes format to a zip file, and voila. I didn&apos;t find information about <code>8075</code> being file header of a zip file, though.</p>
+<p>Replace the last part of the code above with below:</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">path = DFS(img=img, entrance=entrance, exit=exit)[<span class="hljs-number">1</span>:] <span class="hljs-comment"># change the function name to use different methods</span></span><br><span class="line">tofile = []</span><br><span class="line"><span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> path:</span><br><span class="line">    tofile.append(img[c][<span class="hljs-number">2</span>])</span><br><span class="line"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;assets/maze.zip&quot;</span>, <span class="hljs-string">&apos;wb&apos;</span>) <span class="hljs-keyword">as</span> f:</span><br><span class="line">    f.write(<span class="hljs-built_in">bytes</span>(tofile[::<span class="hljs-number">2</span>]))</span><br></pre></td></tr></table></figure>
+
+<p>Inside the <code>maze.zip</code> file just created lies the url for the next level, with another zip file <code>mybroken.zip</code> which has not been used yet.</p>
+<h2><a href="#level-25" class="header-anchor">#</a><span id="level-25">Level 25</span></h2><blockquote>
+<p>Page title: <code>Imagine how they sound</code><br>Inside the source code: <code>can you see the waves?</code></p>
+</blockquote>
+<p>Open the picture in a new tab. The url of the picture is <code>lake1.jpg</code>. &quot;Sound&quot; it says. Replace the url, maybe with <code>lake1.wav</code> or <code>lake1.mp3</code> or other audio file extensions. Fact is, <code>lake1.wav</code> is a valid file we can download. Judging from the file name, there has to be a whole lot of audio files, such as lake2, lake3, etc.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">i = <span class="hljs-number">1</span></span><br><span class="line"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:</span><br><span class="line">    url = <span class="hljs-string">f&quot;http://www.pythonchallenge.com/pc/hex/lake<span class="hljs-subst">{i}</span>.wav&quot;</span></span><br><span class="line">    r = requests.get(url, auth=requests.auth.HTTPBasicAuth(<span class="hljs-string">&apos;butter&apos;</span>, <span class="hljs-string">&apos;fly&apos;</span>))</span><br><span class="line">    <span class="hljs-keyword">if</span> r.status_code != <span class="hljs-number">200</span>:</span><br><span class="line">        <span class="hljs-keyword">break</span> <span class="hljs-comment"># break when url is invalid</span></span><br><span class="line">    <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">f&quot;assets/25/lake<span class="hljs-subst">{i}</span>.wav&quot;</span>, <span class="hljs-string">&apos;wb&apos;</span>) <span class="hljs-keyword">as</span> f:</span><br><span class="line">        f.write(r.content)</span><br><span class="line">    i += <span class="hljs-number">1</span></span><br></pre></td></tr></table></figure>
+
+<p>There&apos;re in total 25 wav files. <code>lake1.jpg</code> is a jigsaw with exactly 25 pieces. Seems we are supposed to get 25 small pictures out of these wav files and put them together into a bigger picture.</p>
+<p>So what information should we extract from them? I tried the waveforms, spectrums of the files. Nothing seems rational. Again, some online search.</p>
+<p>Save each wav file into a image object, in bytes format. That&apos;s how it should be.</p>
+<p>Well, I never thought about this.</p>
+<p>Let&apos;s dive in.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> wave</span><br><span class="line">waves = [wave.<span class="hljs-built_in">open</span>(<span class="hljs-string">f&quot;assets/25/lake<span class="hljs-subst">{i}</span>.wav&quot;</span>, <span class="hljs-string">&apos;rb&apos;</span>) <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">26</span>)]</span><br><span class="line"><span class="hljs-keyword">for</span> audio <span class="hljs-keyword">in</span> waves:</span><br><span class="line">    <span class="hljs-built_in">print</span>(audio.getparams())</span><br></pre></td></tr></table></figure>
+
+<p>All 25 files share the same parameters.</p>
+<blockquote>
+<p>_wave_params(nchannels=1, sampwidth=1, framerate=9600, nframes=10800, comptype=&apos;NONE&apos;, compname=&apos;not compressed&apos;)</p>
+</blockquote>
+<p>Judging from the parameters, each file contains proximately 10800 bytes, which is also size of a image consists of 3600 pixels.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image</span><br><span class="line"></span><br><span class="line">j = <span class="hljs-number">0</span></span><br><span class="line">img = Image.new(<span class="hljs-string">&apos;RGB&apos;</span>, (<span class="hljs-number">300</span>, <span class="hljs-number">300</span>), <span class="hljs-number">0</span>)</span><br><span class="line">waves = [wave.<span class="hljs-built_in">open</span>(<span class="hljs-string">f&quot;assets/25/lake<span class="hljs-subst">{i}</span>.wav&quot;</span>, <span class="hljs-string">&apos;rb&apos;</span>) <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">26</span>)]</span><br><span class="line"><span class="hljs-keyword">for</span> audio <span class="hljs-keyword">in</span> waves:</span><br><span class="line">    tmp = Image.frombytes(<span class="hljs-string">&quot;RGB&quot;</span>, (<span class="hljs-number">60</span>, <span class="hljs-number">60</span>), <span class="hljs-built_in">bytes</span>(audio.readframes(<span class="hljs-number">10800</span>)))</span><br><span class="line">    img.paste(tmp, [j%<span class="hljs-number">5</span>*<span class="hljs-number">60</span>, j//<span class="hljs-number">5</span>*<span class="hljs-number">60</span>])</span><br><span class="line">    j += <span class="hljs-number">1</span></span><br><span class="line">img.show()</span><br></pre></td></tr></table></figure>
+
+<p>And the answer is in the output.</p>
+<h2><a href="#level-26" class="header-anchor">#</a><span id="level-26">Level 26</span></h2><p>Be a man - Apologize!</p>
+<p>In the source code: you&apos;ve got his email.</p>
+<p>Email. The only email ever was in <a href="/2022/pythonchallenge#level-19">level 19</a>. So we are supposed to write a email rather than modifying the request headers then. However, maybe the site has lost some functions over the years. The email I wrote never got a reply. When searching for informations, I found that a reply WAS supposed to appear, inside which a md5 thumbprint was offered to help dealing with the <code>mybroken.zip</code> in <a href="#level-24">level 24</a>.</p>
+<blockquote>
+<p>Never mind that.<br>Have you found my broken zip?<br>md5: bbb8b499a0eef99b52c7f13f4e78c24b<br>Can you believe what one mistake can lead to?</p>
+</blockquote>
+<p>It&apos;s clear that we should do some modification to <code>mybroken.zip</code> to get the same md5 thumbprint.</p>
+<p>As a matter of fact, if you extract files from <code>mybroken.zip</code> using 7-zip, the <code>mybroken.gif</code> inside is completely visiable, in spite of a CRC failed problem. It&apos;s &quot;Speed&quot;. I don&apos;t know about the details of how 7-zip managed to do this. But according to other solutions, only half of the image could be seen.</p>
+<p>It says &quot;one mistake&quot;. Only one byte of data is incorrect, then. Simply modify every byte of data and check the md5 thumbprint would do the trick.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> hashlib</span><br><span class="line"></span><br><span class="line">standard = <span class="hljs-string">&quot;bbb8b499a0eef99b52c7f13f4e78c24b&quot;</span></span><br><span class="line"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;assets/maze/mybroken.zip&quot;</span>, <span class="hljs-string">&quot;rb&quot;</span>) <span class="hljs-keyword">as</span> f:</span><br><span class="line">    original = f.read()</span><br><span class="line">flag = <span class="hljs-number">0</span></span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(original)):</span><br><span class="line">    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">256</span>):</span><br><span class="line">        data = original[:i] + <span class="hljs-built_in">bytes</span>([j]) + original[i+<span class="hljs-number">1</span>:]</span><br><span class="line">        <span class="hljs-keyword">if</span> hashlib.md5(data).hexdigest() == standard:</span><br><span class="line">            flag = <span class="hljs-number">1</span></span><br><span class="line">            <span class="hljs-keyword">break</span></span><br><span class="line">    <span class="hljs-keyword">if</span> flag:</span><br><span class="line">        <span class="hljs-keyword">break</span></span><br><span class="line"><span class="hljs-built_in">print</span>(flag)</span><br><span class="line"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;assets/maze/new.zip&quot;</span>, <span class="hljs-string">&apos;wb&apos;</span>) <span class="hljs-keyword">as</span> new_file:</span><br><span class="line">    new_file.write(data)</span><br></pre></td></tr></table></figure>
+
+<p>Now the new zip file has no CRC problem. Conbined with &quot;I&apos;m missing the boat&quot;, the answer should be <code>speedboat</code>.</p>
+<h2><a href="#level-27" class="header-anchor">#</a><span id="level-27">Level 27</span></h2><p>Between the tables.</p>
+<p>The picture lead to a page which requires a new set of username and password. Inside the source code:</p>
+<blockquote>
+<p>did you say gif?<br>oh, and this is NOT a repeat of 14</p>
+</blockquote>
+<p>The url of the picture is <code>zigzag.jpg</code>. Change it to <code>zigzag.gif</code>, and we get a greyscale image.</p>
+<p>Gee, I haven&apos;t work out a problem totally on my own since level 23. It&apos;s getting harder and harder for me to get the hints. Well, no surprises for this level.</p>
+<p>Most of the gif files are in &quot;P&quot; mode. It&apos;s a good way to save space. A color palette is required so as to display a &quot;P&quot; mode image. The value stored in each pixels are a pointer to a color in the palette. Here the key to solve to problem is the color palette.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image</span><br><span class="line"></span><br><span class="line">img = Image.<span class="hljs-built_in">open</span>(<span class="hljs-string">&apos;assets/zigzag.gif&apos;</span>)</span><br><span class="line">palette = img.getpalette()</span><br><span class="line"><span class="hljs-built_in">print</span>(palette)</span><br></pre></td></tr></table></figure>
+
+<p>The arrangement of values in this palette is regular. Every consective three values are the same. What we need is only one of three same values.</p>
+<p>Next thing to do is translate the pixel value to its color using palette.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image</span><br><span class="line"></span><br><span class="line">img = Image.<span class="hljs-built_in">open</span>(<span class="hljs-string">&apos;assets/zigzag.gif&apos;</span>)</span><br><span class="line">palette = img.getpalette()[::<span class="hljs-number">3</span>]</span><br><span class="line">trans = <span class="hljs-built_in">bytes</span>.maketrans(<span class="hljs-built_in">bytes</span>([i <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">256</span>)]), <span class="hljs-built_in">bytes</span>(palette))</span><br><span class="line">img_b = img.tobytes()</span><br><span class="line"><span class="hljs-built_in">print</span>(<span class="hljs-string">f&apos;img_b  first 20: <span class="hljs-subst">{img_b[:<span class="hljs-number">20</span>].<span class="hljs-built_in">hex</span>()}</span>&apos;</span>)</span><br><span class="line"><span class="hljs-built_in">print</span>(<span class="hljs-string">f&apos;img_b  last 20: <span class="hljs-subst">{img_b[-<span class="hljs-number">20</span>:].<span class="hljs-built_in">hex</span>()}</span>&apos;</span>)</span><br><span class="line">result = <span class="hljs-built_in">bytes</span>.translate(img_b, trans)</span><br><span class="line"><span class="hljs-built_in">print</span>(<span class="hljs-string">f&apos;result first 20: <span class="hljs-subst">{result[:<span class="hljs-number">20</span>].<span class="hljs-built_in">hex</span>()}</span>&apos;</span>)</span><br><span class="line"><span class="hljs-built_in">print</span>(<span class="hljs-string">f&apos;result last 20: <span class="hljs-subst">{result[-<span class="hljs-number">20</span>:].<span class="hljs-built_in">hex</span>()}</span>&apos;</span>)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>img_b  first 20: d7d0cb0cfe3c8b4842bd7fb0ad46aacf27207e8e<br>img_b  last 20: 7a5f0d5b95e3b20e6a0388bf05d439b8174efa64<br>result first 20: d0cb0cfe3c8b4842bd7fb0ad46aacf27207e8ea4<br>result last 20: 5f0d5b95e3b20e6a0388bf05d439b8174efa645d</p>
+</blockquote>
+<p>Seems that the first 20 bytes of variable <code>result</code> and variable <code>img_b</code> are identical, except for the first byte of <code>img_b</code> and last byte of <code>relsult</code>. Are they the same all the way?</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-built_in">print</span>(<span class="hljs-built_in">len</span>(img_b) == <span class="hljs-built_in">len</span>(result))</span><br><span class="line"><span class="hljs-built_in">print</span>(img_b[<span class="hljs-number">1</span>:] == result[:-<span class="hljs-number">1</span>])</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>True<br>False</p>
+</blockquote>
+<p>Turns out that these two variables are identical in lenth. The content we are looking at, on the other hand, are different.</p>
+<p>Now let&apos;s compare the contents.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">raw, img_b = raw[<span class="hljs-number">1</span>:], img_b[:-<span class="hljs-number">1</span>]</span><br><span class="line">diff_raw = []</span><br><span class="line">diff_b = []</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(raw)):</span><br><span class="line">    <span class="hljs-keyword">if</span> raw[i] != img_b[i]:</span><br><span class="line">        diff_raw.append(raw[i])</span><br><span class="line">        diff_b.append(img_b[i])</span><br><span class="line"><span class="hljs-built_in">print</span>(<span class="hljs-built_in">bytes</span>(diff_raw)[:<span class="hljs-number">20</span>])</span><br><span class="line"><span class="hljs-built_in">print</span>(<span class="hljs-built_in">bytes</span>(diff_b)[:<span class="hljs-number">20</span>])</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>b&apos;BZh91AY&amp;SY\xe0\xaaYF\x00\x17\x9a\x11\x80@&apos;<br>b&apos;\x99\xbdQ\x82\xf2\x89S\x04\x15E\x047 \x04\x95\xe4N\x9b\xd5\xa8&apos;</p>
+</blockquote>
+<p>The first one is a bzip compressed content obviously. The other one, no clue.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">clue1, clue2 = <span class="hljs-built_in">bytes</span>(diff_raw), <span class="hljs-built_in">bytes</span>(diff_b)</span><br><span class="line">clue1 = bz2.BZ2Decompressor().decompress(clue1)</span><br><span class="line"><span class="hljs-built_in">print</span>(clue1)</span><br></pre></td></tr></table></figure>
+
+<p>It&apos;s a bunch of information, one is a url, others are just words. Use <code>set</code> class to remove redundant words.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">l1 = clue1.decode().split(<span class="hljs-string">&apos; &apos;</span>)</span><br><span class="line"><span class="hljs-built_in">print</span>(<span class="hljs-built_in">set</span>(l1))</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>{&apos;else&apos;, &apos;is&apos;, &apos;raise&apos;, &apos;pass&apos;, &apos;assert&apos;, &apos;while&apos;, &quot;while&apos;&quot;, &apos;yield&apos;, &apos;in&apos;, &apos;lambda&apos;, &apos;for&apos;, &apos;return&apos;, &apos;or&apos;, &apos;../ring/bell.html&apos;, &apos;exec&apos;, &apos;def&apos;, &apos;if&apos;, &apos;break&apos;, &apos;continue&apos;, &apos;not&apos;, &apos;and&apos;, &apos;import&apos;, &quot;b&apos;../ring/bell.html&quot;, &apos;switch&apos;, &apos;class&apos;, &apos;except&apos;, &apos;global&apos;, &apos;del&apos;, &apos;repeat&apos;, &apos;from&apos;, &apos;elif&apos;, &apos;try&apos;, &apos;print&apos;, &apos;finally&apos;}</p>
+</blockquote>
+<p><code>../ring/bell.html</code> is the exact url that main picture of this level pointing at. That way, the username and password should be in the set as well. Question is, which ones?</p>
+<p>If we take down the position of these differences, and make a image and change theses positions, we&apos;ll get a picture as follows.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(raw)):</span><br><span class="line">    <span class="hljs-keyword">if</span> raw[i] != img_b[i]:</span><br><span class="line">        diff_raw.append(raw[i])</span><br><span class="line">        diff_b.append(img_b[i])</span><br><span class="line">        pos.append(i)</span><br><span class="line">newimg = Image.new(<span class="hljs-string">&quot;1&quot;</span>, img.size, <span class="hljs-number">1</span>)</span><br><span class="line"><span class="hljs-keyword">for</span> v <span class="hljs-keyword">in</span> pos:</span><br><span class="line">    newimg.putpixel((v%width, v//width), <span class="hljs-number">0</span>)</span><br><span class="line">newimg.show()</span><br></pre></td></tr></table></figure>
+
+<img src="/img/level27.png" alt="level 27">
+
+<p>Now what&apos;s left to do is just filter python keywords outta that set earlier.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">clue1, clue2 = <span class="hljs-built_in">bytes</span>(diff_raw), <span class="hljs-built_in">bytes</span>(diff_b)</span><br><span class="line">clue1 = bz2.BZ2Decompressor().decompress(clue1)</span><br><span class="line">words = <span class="hljs-built_in">set</span>(clue1.decode().split(<span class="hljs-string">&apos; &apos;</span>))</span><br><span class="line"><span class="hljs-keyword">for</span> ele <span class="hljs-keyword">in</span> words:</span><br><span class="line">    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> keyword.iskeyword(ele):</span><br><span class="line">        <span class="hljs-built_in">print</span>(ele)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>repeat<br>exec<br>../ring/bell.html<br>switch<br>print</p>
+</blockquote>
+<p>Apparently, this level is a little out of date. Some keywords being removed in python3 could be a reason. There should be only two words left alongside a url. So, which words are not keywords in both python2 and python3? It&apos;s simple now.</p>
+<p>Useful link: <a target="_blank" rel="noopener" href="https://github.com/python/cpython/blob/2.7/Lib/keyword.py">keywords in python2</a></p>
+<h2><a href="#level-28" class="header-anchor">#</a><span id="level-28">Level 28</span></h2><p>Ring-Ring-Ring, say it out loud.</p>
+<p>Sounds like grin or green? First try <code>grin.html</code>.</p>
+<blockquote>
+<p>you are not happy - you are feeling sick.</p>
+</blockquote>
+<p>OK, then it has to be <code>green.html</code>.</p>
+<blockquote>
+<p>Yes, Green!</p>
+</blockquote>
+<p>What, nothing?</p>
+<p>If you take a deeper look at the main picture <code>bell.png</code>, there&apos;re some &quot;bands&quot; in the picture. Maybe it has something to do with the G value.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> cv2</span><br><span class="line"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="hljs-string">&quot;assets/bell.png&quot;</span>)</span><br><span class="line">height, width, _ = img.shape</span><br><span class="line">b, g, r = cv2.split(img)</span><br><span class="line">g1 = np.reshape(g, (<span class="hljs-number">1</span>, -<span class="hljs-number">1</span>))[<span class="hljs-number">0</span>]</span><br><span class="line">np.set_printoptions(threshold=np.inf)</span><br><span class="line"><span class="hljs-built_in">print</span>(g1)</span><br></pre></td></tr></table></figure>
+
+<p>Variable <code>g1</code> stores 307200 values. And if you take a deep look at it, the differences of most consective two values are 42/-42.</p>
+<p>Do the subtraction, filter out the values 42/-42.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> cv2</span><br><span class="line"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="hljs-string">&quot;assets/bell.png&quot;</span>)</span><br><span class="line">height, width, _ = img.shape</span><br><span class="line">b, g, r = cv2.split(img)</span><br><span class="line">g1 = np.reshape(g, (<span class="hljs-number">1</span>, -<span class="hljs-number">1</span>))[<span class="hljs-number">0</span>].astype(np.int8)</span><br><span class="line">g2= g1[<span class="hljs-number">0</span>::<span class="hljs-number">2</span>] - g1[<span class="hljs-number">1</span>::<span class="hljs-number">2</span>]</span><br><span class="line">l = []</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> g2:</span><br><span class="line">    <span class="hljs-keyword">if</span> i != <span class="hljs-number">42</span> <span class="hljs-keyword">and</span> i != -<span class="hljs-number">42</span>:</span><br><span class="line">        l.append(i)</span><br><span class="line"><span class="hljs-built_in">print</span>(l)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[119, -104, -111, 100, 117, 110, -110, 105, 116, -40, 41, -46, -115, 112, -108, 105, 116, 40, 41, 91, 48, -93, 32, -63]</p>
+</blockquote>
+<p>Does it remind you of something like ascii code? Well, it does for me.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&quot;</span>.join(<span class="hljs-built_in">chr</span>(<span class="hljs-built_in">abs</span>(j)) <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> l))</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>whodunnit().split()[0] ?</p>
+</blockquote>
+<p>Whodun-WHAT? First I thought it&apos;s referring to the site. In <a target="_blank" rel="noopener" href="http://www.pythonchallenge.com/about.php">About Page of python challenge</a> I found the site was written by Nadav Samet. Not correct.</p>
+<p>I was so so close to solving the problem totally on my own, except for a final kick. It is referring to the creator of Python!!</p>
+<h2><a href="#level-29" class="header-anchor">#</a><span id="level-29">Level 29</span></h2><p>An interesting level. Nothing useful in both web page and source code.</p>
+<p>Well, if there&apos;re no line numbers.</p>
+<p>I use dev tools to view the source code mostly. There&apos;s nothing interesting in the source code that way.</p>
+<p>However, I&apos;ve come to loving using <code>requests</code> module to view the source code recently. That&apos;s where &quot;magic&quot; happens. lol</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">url = <span class="hljs-string">&quot;http://www.pythonchallenge.com/pc/ring/guido.html&quot;</span></span><br><span class="line">r = requests.get(url, auth=(<span class="hljs-string">&quot;repeat&quot;</span>, <span class="hljs-string">&quot;switch&quot;</span>))</span><br><span class="line"><span class="hljs-built_in">print</span>(r.text)</span><br></pre></td></tr></table></figure>
+
+<p>There&apos;re some blank lines in the end. You can&apos;t tell any differences between these lines when they are displayed in a terminal, though.</p>
+<p>Press <kbd>ctrl</kbd>+<kbd>u</kbd> in <code>guido.html</code>. For other web broswers, the shortcut could be different. In microsoft edge dev, we enter a page <code>view-source:http://www.pythonchallenge.com/pc/ring/guido.html</code>. The source code are displayed much distinctly.</p>
+<p>Select all, you&apos;ll see the length of these blank lines are different. Yeah, we got the key!</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">url = <span class="hljs-string">&quot;http://www.pythonchallenge.com/pc/ring/guido.html&quot;</span></span><br><span class="line">r = requests.get(url, auth=(<span class="hljs-string">&quot;repeat&quot;</span>, <span class="hljs-string">&quot;switch&quot;</span>))</span><br><span class="line">msg = [<span class="hljs-built_in">len</span>(i) <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> r.text.split(<span class="hljs-string">&quot;\n&quot;</span>)[<span class="hljs-number">12</span>:]]</span><br><span class="line"><span class="hljs-built_in">print</span>(msg)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[66, 90, 104, 57, 49, 65, 89, 38, 83, 89, 217, 194, 112, 24, 0, 0, 4, 157, 128, 96, 128, 0, 0, 128, 32, 46, 47, 156, 32, 32, 0, 49, 76, 152, 153, 6, 70, 17, 50, 104, 100, 6, 106, 85, 100, 185, 158, 198, 24, 197, 146, 82, 72, 229, 90, 34, 1, 186, 167, 128, 127, 139, 185, 34, 156, 40, 72, 108, 225, 56, 12, 0, 0]</p>
+</blockquote>
+<p>Ascii code?</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msg = [<span class="hljs-built_in">chr</span>(<span class="hljs-built_in">len</span>(i)) <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> r.text.split(<span class="hljs-string">&quot;\n&quot;</span>)[<span class="hljs-number">12</span>:]]</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[&apos;B&apos;, &apos;Z&apos;, &apos;h&apos;, &apos;9&apos;, &apos;1&apos;, &apos;A&apos;, &apos;Y&apos;, &apos;&amp;&apos;, &apos;S&apos;, &apos;Y&apos;, &apos;&#xD9;&apos;, &apos;&#xC2;&apos;, &apos;p&apos;, &apos;\x18&apos;, &apos;\x00&apos;, &apos;\x00&apos;, &apos;\x04&apos;, &apos;\x9d&apos;, &apos;\x80&apos;, &apos;`&apos;, &apos;\x80&apos;, &apos;\x00&apos;, &apos;\x00&apos;, &apos;\x80&apos;, &apos; &apos;, &apos;.&apos;, &apos;/&apos;, &apos;\x9c&apos;, &apos; &apos;, &apos; &apos;, &apos;\x00&apos;, &apos;1&apos;, &apos;L&apos;, &apos;\x98&apos;, &apos;\x99&apos;, &apos;\x06&apos;, &apos;F&apos;, &apos;\x11&apos;, &apos;2&apos;, &apos;h&apos;, &apos;d&apos;, &apos;\x06&apos;, &apos;j&apos;, &apos;U&apos;, &apos;d&apos;, &apos;&#xB9;&apos;, &apos;\x9e&apos;, &apos;&#xC6;&apos;, &apos;\x18&apos;, &apos;&#xC5;&apos;, &apos;\x92&apos;, &apos;R&apos;, &apos;H&apos;, &apos;&#xE5;&apos;, &apos;Z&apos;, &apos;&quot;&apos;, &apos;\x01&apos;, &apos;&#xBA;&apos;, &apos;&#xA7;&apos;, &apos;\x80&apos;, &apos;\x7f&apos;, &apos;\x8b&apos;, &apos;&#xB9;&apos;, &apos;&quot;&apos;, &apos;\x9c&apos;, &apos;(&apos;, &apos;H&apos;, &apos;l&apos;, &apos;&#xE1;&apos;, &apos;8&apos;, &apos;\x0c&apos;, &apos;\x00&apos;, &apos;\x00&apos;]</p>
+</blockquote>
+<p>It&apos;s pretty clear now. Bzip compressed content.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> requests, bz2</span><br><span class="line"></span><br><span class="line">url = <span class="hljs-string">&quot;http://www.pythonchallenge.com/pc/ring/guido.html&quot;</span></span><br><span class="line">r = requests.get(url, auth=(<span class="hljs-string">&quot;repeat&quot;</span>, <span class="hljs-string">&quot;switch&quot;</span>))</span><br><span class="line">msg = [<span class="hljs-built_in">len</span>(i) <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> r.text.split(<span class="hljs-string">&quot;\n&quot;</span>)[<span class="hljs-number">12</span>:]]</span><br><span class="line"><span class="hljs-built_in">print</span>(bz2.decompress(<span class="hljs-built_in">bytes</span>(msg)))</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>b&quot;Isn&apos;t it clear? I am yankeedoodle!&quot;</p>
+</blockquote>
+<p>Well, I was lucky this time. Didn&apos;t run into much trouble.</p>
+<h2><a href="#level-30" class="header-anchor">#</a><span id="level-30">Level 30</span></h2><p>Source code has made it clear that we should look at <code>yankeedoodle.csv</code>.</p>
+<p>In it are some &quot;random&quot; values between 1 and 0, on first glimpse.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np</span><br><span class="line"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;assets/yankeedoodle.csv&quot;</span>, <span class="hljs-string">&quot;r&quot;</span>) <span class="hljs-keyword">as</span> f:</span><br><span class="line">    data = [<span class="hljs-built_in">float</span>(x.strip()) <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> f.read().split(<span class="hljs-string">&quot;,&quot;</span>)]</span><br><span class="line">content = np.array([data])</span><br><span class="line">n = <span class="hljs-built_in">len</span>(img[<span class="hljs-number">0</span>])</span><br><span class="line"><span class="hljs-built_in">print</span>(n)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>7367</p>
+</blockquote>
+<p>What if we regard these values as a picture? First we need to find the factors of 7367</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> math</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">resolve</span>(<span class="hljs-params">n</span>):</span></span><br><span class="line">    factors = []</span><br><span class="line">    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">2</span>, <span class="hljs-built_in">int</span>(math.sqrt(n))):</span><br><span class="line">        <span class="hljs-keyword">if</span> n % i == <span class="hljs-number">0</span>:</span><br><span class="line">            factors.append([i, <span class="hljs-built_in">int</span>(n/i)])</span><br><span class="line">    <span class="hljs-keyword">return</span> factors</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">print</span>(resolve(n))</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[[53, 139]]</p>
+</blockquote>
+<p>There&apos;s only one possibility then. The image has to be 53px*139px.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> cv2</span><br><span class="line">height, width = resolve(n)[<span class="hljs-number">0</span>]</span><br><span class="line">content.resize((height, width))</span><br><span class="line">cv2.imshow(<span class="hljs-string">&quot;img&quot;</span>, content)</span><br><span class="line">cv2.waitKey()</span><br></pre></td></tr></table></figure>
+
+<p>The output is a total mess. Switch the value of height and width.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">img.resize((width, height))</span><br></pre></td></tr></table></figure>
+
+<p>This time the output reads <code>n=str(x[i])[5]+str(x[i+1])[5]+str(x[i+2])[6]</code>. We are supposed to transform the float numbers into some string, if I&apos;m right.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;assets/yankeedoodle.csv&quot;</span>, <span class="hljs-string">&quot;r&quot;</span>) <span class="hljs-keyword">as</span> f:</span><br><span class="line">    data = [x.strip() <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> f.read().split(<span class="hljs-string">&quot;,&quot;</span>)]</span><br><span class="line">content = np.array([data])</span><br><span class="line">n = <span class="hljs-built_in">len</span>(content[<span class="hljs-number">0</span>])</span><br><span class="line">info = []</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, n-<span class="hljs-number">2</span>, <span class="hljs-number">3</span>):</span><br><span class="line">    n = <span class="hljs-built_in">str</span>(content[<span class="hljs-number">0</span>][i])[<span class="hljs-number">5</span>] + <span class="hljs-built_in">str</span>(content[<span class="hljs-number">0</span>][i+<span class="hljs-number">1</span>])[<span class="hljs-number">5</span>] + <span class="hljs-built_in">str</span>(content[<span class="hljs-number">0</span>][i+<span class="hljs-number">2</span>])[<span class="hljs-number">6</span>]</span><br><span class="line">    info.append(n)</span><br><span class="line"><span class="hljs-built_in">print</span>(info)</span><br></pre></td></tr></table></figure>
+
+<p>The output is a bunch of numbers. Again, ascii code.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">info = []</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, n-<span class="hljs-number">2</span>, <span class="hljs-number">3</span>):</span><br><span class="line">    n = <span class="hljs-built_in">chr</span>(<span class="hljs-built_in">int</span>(<span class="hljs-built_in">str</span>(content[<span class="hljs-number">0</span>][i])[<span class="hljs-number">5</span>] + <span class="hljs-built_in">str</span>(content[<span class="hljs-number">0</span>][i+<span class="hljs-number">1</span>])[<span class="hljs-number">5</span>] + <span class="hljs-built_in">str</span>(content[<span class="hljs-number">0</span>][i+<span class="hljs-number">2</span>])[<span class="hljs-number">6</span>]))</span><br><span class="line">    info.append(n)</span><br><span class="line"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&quot;</span>.join(info))</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>So, you found the hidden message.<br>There is lots of room here for a long message, but we only need very little space to say &quot;look at grandpa&quot;, so the rest is just garbage.<br>(some unintelligible code)</p>
+</blockquote>
+<p>Grandpa it is.</p>
+<h2><a href="#level-31" class="header-anchor">#</a><span id="level-31">Level 31</span></h2><p>Where am I?</p>
+<p>Main picture <code>grandpa.jpg</code> leads to another page, possibly for the next level. It requires another set of username and password to authenticate. The comment in the source code says</p>
+<blockquote>
+<p>short break, this ***REALLY*** has nothing to do with Python</p>
+</blockquote>
+<p>OK, if you say so. Google the image. It&apos;s Ko Samui (or Koh Samui), the second largest island in Thailand.</p>
+<p>ko/samui, koh/samui, kosamui/thailand, kohsamui/thailand. Damn, finally, after four trials.</p>
+<p>The new page reads &quot;That was too easy. You are still on 31...&quot;</p>
+<p>OK, this page seems to be the real level 31.</p>
+<blockquote>
+<p>Page title: UFOs?</p>
+</blockquote>
+<p>The image name is interesting, <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Mandelbrot_set">&quot;mandelbrot&quot;</a>. <a target="_blank" rel="noopener" href="https://youtu.be/7MotVcGvFMg">This video</a> explains it in detail, and helps a lot with understanding mandelbrot set.</p>
+<p>Well, it&apos;s not enough just understand what a mandelbrot set is. At least, for me. I had no idea what to do next. Again, I looked for solutions online.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mandelbrot</span>(<span class="hljs-params">size: <span class="hljs-built_in">tuple</span></span>):</span></span><br><span class="line">    left, top, width, height = <span class="hljs-number">0.34</span>, <span class="hljs-number">0.57</span>, <span class="hljs-number">0.036</span>, <span class="hljs-number">0.027</span></span><br><span class="line">    iteration = <span class="hljs-number">128</span></span><br><span class="line">    xstep, ystep = width/size[<span class="hljs-number">0</span>], height/size[<span class="hljs-number">1</span>]</span><br><span class="line">    <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(size[<span class="hljs-number">1</span>]-<span class="hljs-number">1</span>, -<span class="hljs-number">1</span>, -<span class="hljs-number">1</span>):</span><br><span class="line">        <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(size[<span class="hljs-number">0</span>]):</span><br><span class="line">            c, z = <span class="hljs-built_in">complex</span>(left+x*xstep, top+y*ystep), <span class="hljs-built_in">complex</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>)</span><br><span class="line">            <span class="hljs-keyword">for</span> count <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(iteration):</span><br><span class="line">                z = z**<span class="hljs-number">2</span> + c</span><br><span class="line">                <span class="hljs-keyword">if</span> <span class="hljs-built_in">abs</span>(z) &gt; <span class="hljs-number">2</span>:</span><br><span class="line">                    <span class="hljs-keyword">break</span></span><br><span class="line">            <span class="hljs-keyword">yield</span> count</span><br></pre></td></tr></table></figure>
+
+<p>This is how mandelbrot set should be like for this level. Don&apos;t ask me anything about the value of the <code>z</code>&apos;s and <code>c</code>&apos;s. LOL</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">img = Image.<span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;assets/mandelbrot.gif&quot;</span>)</span><br><span class="line"><span class="hljs-built_in">print</span>(img.size)</span><br><span class="line">newimg = img.copy()</span><br><span class="line">newimg.putdata(<span class="hljs-built_in">list</span>(mandelbrot(img.size)))</span><br><span class="line">newimg.show()</span><br></pre></td></tr></table></figure>
+
+<p>The image we get in this step looks pretty similiar to the <code>mandelbrot.gif</code> file.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">diff = [(a - b) <span class="hljs-keyword">for</span> a, b <span class="hljs-keyword">in</span> <span class="hljs-built_in">zip</span>(img.getdata(), newimg.getdata()) <span class="hljs-keyword">if</span> a != b]</span><br><span class="line"><span class="hljs-built_in">print</span>(diff)</span><br></pre></td></tr></table></figure>
+
+<p>The values in <code>diff</code> are all 16/-16. And there&apos;re 1679 values in it.</p>
+<p>Convert the variable to a 1-bit picture. The size has to be 23*73. These are the only set of factors of 1679.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">result = Image.new(<span class="hljs-string">&quot;1&quot;</span>, (<span class="hljs-number">23</span>, <span class="hljs-number">73</span>))</span><br><span class="line">result.putdata([(i &gt; <span class="hljs-number">0</span>) <span class="hljs-keyword">and</span> <span class="hljs-number">1</span> <span class="hljs-keyword">or</span> <span class="hljs-number">0</span> <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> diff])</span><br><span class="line">result.show()</span><br></pre></td></tr></table></figure>
+
+<p>The image we get this time is the famous <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Arecibo_message">Arecibo message</a>, which was sent into universe in 1974.</p>
+<p>The answer, by the way ,is arecibo.</p>
+<h2><a href="#level-32" class="header-anchor">#</a><span id="level-32">Level 32</span></h2><p>Page title is <code>etch-a-scetch</code>. Seems that we&apos;re to draw something in the page</p>
+<p>A <code>warmup.txt</code> was mentioned in the source code.</p>
+<p>This is pretty simple. We can solve it using the page <code>arecibo.html</code></p>
+<img src="/img/up.png" alt="up">
+
+<p><code>up.html</code> then.</p>
+<blockquote>
+<p>You want to go up? Let&apos;s scale this up then. Now get serious and solve <a target="_blank" rel="noopener" href="http://www.pythonchallenge.com/pc/rock/up.txt">this</a>.</p>
+</blockquote>
+<p>Now it&apos;s so much harder that we&apos;re not supposed to do it by hand.</p>
+<p>It&apos;s harder than I thought. I&apos;ll pause here. Got something else urgent to do...</p>
+<p>Funny story. A colleague played the exact same game the other day. So I turned to him for advice on how to solve this kind of problems. The game is called <em><strong>nonogram</strong></em>. And there&apos;re plenty of online solvers. He himself solves the problem just like I did.</p>
+<p>With some adjustment to the <code>up.txt</code> and <em>*some*</em> help of an <a target="_blank" rel="noopener" href="https://ssjools.hopto.org/nonogram/auto">online nonogram solver</a>, a snake is shown on the screen pretty soon.</p>
+<p>Try <code>snake.html</code>. No good. <code>python.html</code>, yes.</p>
+<figure class="highlight plaintext hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Congrats! You made it through to the smiling python.</span><br><span class="line"></span><br><span class="line">&quot;Free&quot; as in &quot;Free speech&quot;, not as in &quot;free...</span><br></pre></td></tr></table></figure>
+
+<p>Well, just google it.</p>
+<h2><a href="#level-33" class="header-anchor">#</a><span id="level-33">Level 33</span></h2><p>We&apos;re finally at the gate of the last problem, even though I did nothing about level 32. I&apos;m gonna turn back to it, I promise.</p>
+<p>Picture name <code>beer1.jpg</code>. Ring a bell? Of course, try <code>beer2.jpg</code>. It says &quot;no, png&quot;.</p>
+<p>So <code>beer2.png</code> then.</p>
+<p>Source code contains some hints as well.</p>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">&lt;!--</span></span><br><span class="line"><span class="hljs-comment">If you are blinded by the light,</span></span><br><span class="line"><span class="hljs-comment">remove its power, with its might.</span></span><br><span class="line"><span class="hljs-comment">Then from the ashes, fair and square,</span></span><br><span class="line"><span class="hljs-comment">another truth at you will glare.</span></span><br><span class="line"><span class="hljs-comment">--&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>A little translation, I guess:</p>
+<blockquote>
+<p>Remove the brighter pixels, resize to a square image</p>
+</blockquote>
+<p>First, we gotta know the mode of <code>beer2.png</code></p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image</span><br><span class="line">img = Image.<span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;assets/beer2.png&quot;</span>)</span><br><span class="line"><span class="hljs-built_in">print</span>(img.mode)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>L</p>
+</blockquote>
+<p>&quot;L&quot;, is (8-bit pixels, black and white) <a target="_blank" rel="noopener" href="https://pillow.readthedocs.io/en/stable/handbook/concepts.html#concept-modes">according to pillow documentation</a>.</p>
+<p>Now remove the brighter pixels, and save the image only when the picture can be resized into squares.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image</span><br><span class="line"><span class="hljs-keyword">from</span> math <span class="hljs-keyword">import</span> sqrt</span><br><span class="line"></span><br><span class="line">img = Image.<span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;assets/beer2.png&quot;</span>)</span><br><span class="line">values = <span class="hljs-built_in">list</span>(img.getdata())</span><br><span class="line"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:</span><br><span class="line">    max_value = <span class="hljs-built_in">max</span>(values)</span><br><span class="line">    values = [i <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> values <span class="hljs-keyword">if</span> i != max_value]</span><br><span class="line">    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(values) == <span class="hljs-number">0</span>:</span><br><span class="line">        <span class="hljs-keyword">break</span></span><br><span class="line">    root = sqrt(<span class="hljs-built_in">len</span>(values))</span><br><span class="line">    <span class="hljs-keyword">if</span> root == <span class="hljs-built_in">int</span>(root):</span><br><span class="line">        output = Image.new(<span class="hljs-string">&quot;L&quot;</span>, (<span class="hljs-built_in">int</span>(root), <span class="hljs-built_in">int</span>(root)))</span><br><span class="line">        output.putdata(values)</span><br><span class="line">        output.save(<span class="hljs-string">f&quot;assets/33/<span class="hljs-subst">{<span class="hljs-built_in">int</span>(root)}</span>.png&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<img src="/img/level33_1.png" alt="blur">
+
+<p>We can see from the images that a different letter is appearing after <code>110.png</code>. Not so clear, though.</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image</span><br><span class="line"><span class="hljs-keyword">from</span> math <span class="hljs-keyword">import</span> sqrt</span><br><span class="line"></span><br><span class="line">img = Image.<span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;assets/beer2.png&quot;</span>)</span><br><span class="line">values = <span class="hljs-built_in">list</span>(img.getdata())</span><br><span class="line"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:</span><br><span class="line">    max_value = <span class="hljs-built_in">max</span>(values)</span><br><span class="line">    values = [i <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> values <span class="hljs-keyword">if</span> i != max_value]</span><br><span class="line">    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(values) == <span class="hljs-number">0</span>:</span><br><span class="line">        <span class="hljs-keyword">break</span></span><br><span class="line">    root = sqrt(<span class="hljs-built_in">len</span>(values))</span><br><span class="line">    <span class="hljs-keyword">if</span> root == <span class="hljs-built_in">int</span>(root):</span><br><span class="line">        output = Image.new(<span class="hljs-string">&quot;L&quot;</span>, (<span class="hljs-built_in">int</span>(root), <span class="hljs-built_in">int</span>(root)))</span><br><span class="line">        max_value = <span class="hljs-built_in">max</span>(values)</span><br><span class="line">        l = [<span class="hljs-number">255</span> <span class="hljs-keyword">if</span> j == max_value <span class="hljs-keyword">else</span> <span class="hljs-number">0</span> <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> values]</span><br><span class="line">        output.putdata(l)</span><br><span class="line">        output.save(<span class="hljs-string">f&quot;assets/33/<span class="hljs-subst">{<span class="hljs-built_in">int</span>(root)}</span>.png&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<img src="/img/level33_2.png" alt="clear">
+
+<p>Seems that letters with a box should be the answer. Try <code>snilmerg.html</code>. Doesn&apos;t work.</p>
+<p>Oh right! Letters should be aligned in the order as they appear. For example, <code>103.png</code> appears before <code>98.png</code>. So letter &quot;g&quot; should be before letter &quot;r&quot;. Hence, <code>gremlins.html</code>.</p>
+<h2><a href="#final-words" class="header-anchor">#</a><span id="final-words">Final words</span></h2><p>So, that&apos;s it. Wow, what a journey! I&apos;ve learnt so much from it, image processing, http requesting, file structure, etc. I&apos;ll definitely tell my friends learning python or even mastering in python to take a shot. LOL.</p>
+<p>And one last thing, I&apos;m gonna solve level 32, definitely, in a while. ^.^</p>
+
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/python/">#python</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/2022/officeExcelWithPython">Manipulate Microsoft Excel with Python</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/2022/pythonchallenge">Python Challenge Notes (Part 1)</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+<!-- 
+<div class="sharebox">
+    
+<div class="notification is-danger">
+    You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.
+</div>
+
+</div>
+
+
+
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
+    
+<div id="disqus_thread">
+    
+    <div class="notification is-danger">
+        You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.
+    </div>
+    
+    <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+ -->
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2023 Gerald&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            <div class="column is-narrow">
+                <div class="columns is-mobile is-multiline is-centered">
+                
+                    
+                <a class="column is-narrow has-text-black" title="GitHub" target="_blank" rel="noopener" href="https://github.com/Mocky-533">
+                    
+                    <i class="fab fa-github"></i>
+                    
+                </a>
+                
+                    
+                <a class="column is-narrow has-text-black" title="Instagram" target="_blank" rel="noopener" href="https://www.instagram.com/maxwellwu435/">
+                    
+                    <i class="fab fa-instagram"></i>
+                    
+                </a>
+                
+                    
+                <a class="column is-narrow has-text-black" title="Telegram" target="_blank" rel="noopener" href="https://t.me/+nfP8Ly2pi800ZGNl">
+                    
+                    <i class="fab fa-telegram"></i>
+                    
+                </a>
+                
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("en-AU");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+</script>
+
+    
+    
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hljs .clipboard-btn:hover {
+          color: #8a8a8a;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+        clipboard.on('success', function(e) {
+          e.clearSelection();
+        })
+      })
+    </script>
+
+    
+    
+
+    
+
+
+
+<script src="/js/script.js"></script>
+
+
+    <!-- 
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+     -->
+</body>
+</html>

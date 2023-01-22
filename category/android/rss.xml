@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Gerald&#39;s Cabin • Posts by &#34;android&#34; category</title>
+        <link>https://www.mechgerald.site</link>
+        <description></description>
+        <language>en,zh-cn,default</language>
+        <pubDate>Sat, 08 Jan 2022 18:11:02 +0800</pubDate>
+        <lastBuildDate>Sat, 08 Jan 2022 18:11:02 +0800</lastBuildDate>
+        <category>Pixel Experience</category>
+        <category>python</category>
+        <category>Summary</category>
+        <category>shell</category>
+        <category>Review</category>
+        <category>front end</category>
+        <item>
+            <guid isPermalink="true">https://www.mechgerald.site/2022/8T-flashing</guid>
+            <title>Flashing Pixel Experience into OP 8T</title>
+            <link>https://www.mechgerald.site/2022/8T-flashing</link>
+            <category>Pixel Experience</category>
+            <pubDate>Sat, 08 Jan 2022 18:11:02 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;I flashed &lt;a href=&#34;https://download.pixelexperience.org/&#34;&gt;Pixel Experience&lt;/a&gt; into my OP 8T recently. Here&amp;apos;re some problems I ran into.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;h2&gt;&lt;a href=&#34;#flashing-pixel-experience&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;&lt;span id=&#34;flashing-pixel-experience&#34;&gt;Flashing Pixel Experience&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;The information in the &lt;a href=&#34;https://wiki.pixelexperience.org/devices/kebab/install&#34;&gt;Pixel Experience Official Instructions&lt;/a&gt; has covered about everything needed when flashing.&lt;/p&gt;
+&lt;p&gt;Here&amp;apos;re some problems I ran into. Actually, various solutions can be found online. I&amp;apos;ll take down some useful methods here, so I do not have to search for it again.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;No device found when running &lt;code&gt;fastboot devices&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt; It is a driver issue. Install the &lt;code&gt;Android Bootloader Interface&lt;/code&gt; driver will do the trick.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The &lt;code&gt;copy-partitions-20210323_1922.zip&lt;/code&gt; file mentioned in the &lt;a href=&#34;https://wiki.pixelexperience.org/devices/kebab/install/#pre-install-instructions&#34;&gt;pre-install instructions&lt;/a&gt; section couldn&amp;apos;t be downloaded.&lt;/p&gt;
+&lt;p&gt; This file does not exist in the original repo. This is a &lt;a href=&#34;https://androidfilehost.com/?fid=2188818919693768129&#34;&gt;subsitude&lt;/a&gt;. Everything works just fine with it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The PE recovery could not flash the firmware. Error code &lt;code&gt;error in /sideload/package.zip (status 1)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt; I have no idea what triggered it. By switching to &lt;a href=&#34;https://twrp.me/&#34;&gt;twrp recovery&lt;/a&gt;, the flashing progress went on just fine. Although the instructions says the other ways.&lt;/p&gt;
+ &lt;img src=&#34;/img/PE.png&#34; alt=&#34;Use PE recovery to flash the build.&#34;&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Don&amp;apos;t relock bootloader&lt;/p&gt;
+&lt;p&gt; It was mentioned in the &lt;a href=&#34;https://wiki.pixelexperience.org/devices/kebab/install/#post-install-instructions&#34;&gt;Post-install instructions&lt;/a&gt;that relock will be okay after flashing &lt;code&gt;avb_custom_key&lt;/code&gt;. Remember, you need to be sure you have succeeded flashing the &lt;code&gt;avb_custom_key&lt;/code&gt;. I didn&amp;apos;t. Hence the horrifying &amp;quot;your device is corrupt. It can&amp;apos;t be trusted and will not boot&amp;quot; shows up.&lt;/p&gt;
+&lt;p&gt; If you did the same thing as I did. Don&amp;apos;t panic, I found a way to re-unlock the bootloader.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;power&lt;/code&gt;+&lt;code&gt;volume up&lt;/code&gt;, Power off completely.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;volume down&lt;/code&gt;+&lt;code&gt;volume up&lt;/code&gt;, then connect the label, voila~, you&amp;apos;re in the fastboot mode.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt; If the method above did not work. The best and valid-for-sure method is 9008 flashing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a href=&#34;#problems-when-using&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;&lt;span id=&#34;problems-when-using&#34;&gt;Problems When Using&lt;/span&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Call recording&lt;/p&gt;
+&lt;p&gt; It&amp;apos;s said Android is gonna support it. However PE Plus version has not supported it yet. Magisk module &lt;a href=&#34;https://callrecorder.skvalex.com/get&#34;&gt;Call Recorder - SKVALEX&lt;/a&gt; will do the trick. There&amp;apos;re other modules as well. I haven&amp;apos;t tried each one of them yet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;SMS blocking&lt;/p&gt;
+&lt;p&gt; This is a problem I have not found a way to solve.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Hide Google Play updating informing.&lt;/p&gt;
+&lt;p&gt; A major problem I have with Google Play is that you can&amp;apos;t hide the updating informing of applications. The &lt;a href=&#34;https://github.com/Magisk-Modules-Repo/Detach&#34;&gt;Detach&lt;/a&gt; module will solve the problem. The instructions is clear in the official repository.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Hide application list.&lt;/p&gt;
+&lt;p&gt; If you have had fun with rooting phones, you are definitely familiar with this function. It&amp;apos;s a method to protect our privacy, in a way.&lt;/p&gt;
+&lt;p&gt; Here is the original &lt;a href=&#34;https://github.com/Dr-TSNG/Hide-My-Applist&#34;&gt;github repository&lt;/a&gt;. You need LSPosed module to use it properly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Network Access Control&lt;/p&gt;
+&lt;p&gt; The official control method requires us setting the access app by app, which is overly inconvenient. &lt;a href=&#34;https://github.com/ukanth/afwall/&#34;&gt;AFWall+&lt;/a&gt; does help with it. Simply checking or unchecking the app under LAN, WiFi, Mobile Data will do the trick.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.mechgerald.site/2022/zh-cn/8T-flashing</guid>
+            <title>一加8T刷机(作死)历程</title>
+            <link>https://www.mechgerald.site/2022/zh-cn/8T-flashing</link>
+            <category>Pixel Experience</category>
+            <pubDate>Sat, 08 Jan 2022 18:11:02 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&amp;#x6628;&amp;#x5929;&amp;#x628A;&amp;#x624B;&amp;#x91CC;&amp;#x7684;8T&amp;#x5237;&amp;#x4E86;&lt;a href=&#34;https://download.pixelexperience.org/&#34;&gt;Pixel Experience&lt;/a&gt;&amp;#xFF0C;&amp;#x7B80;&amp;#x5355;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E00;&amp;#x4E0B;&amp;#x9047;&amp;#x5230;&amp;#x7684;&amp;#x51E0;&amp;#x4E2A;&amp;#x95EE;&amp;#x9898;&amp;#x3002;&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;h2&gt;&lt;a href=&#34;#shua-ru-pixel-experience&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;&lt;span id=&#34;shua-ru-pixel-experience&#34;&gt;&amp;#x5237;&amp;#x5165;pixel experience&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://wiki.pixelexperience.org/devices/kebab/install&#34;&gt;Pixel Experience&amp;#x5B98;&amp;#x65B9;&amp;#x7684;&amp;#x5237;&amp;#x673A;&amp;#x6559;&amp;#x7A0B;&lt;/a&gt;&amp;#x5DF2;&amp;#x7ECF;&amp;#x6BD4;&amp;#x8F83;&amp;#x8BE6;&amp;#x5C3D;&amp;#x4E86;&amp;#xFF0C;&amp;#x76F4;&amp;#x63A5;&amp;#x6309;&amp;#x7167;&amp;#x6B65;&amp;#x9AA4;&amp;#x4E00;&amp;#x6B65;&amp;#x6B65;&amp;#x64CD;&amp;#x4F5C;&amp;#x5373;&amp;#x53EF;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4EE5;&amp;#x4E0B;&amp;#x5F00;&amp;#x59CB;&amp;#x8BB0;&amp;#x5F55;&amp;#x9047;&amp;#x5230;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x5176;&amp;#x5B9E;&amp;#x89E3;&amp;#x51B3;&amp;#x65B9;&amp;#x6848;&amp;#x7F51;&amp;#x4E0A;&amp;#x641C;&amp;#x4E00;&amp;#x641C;&amp;#x4E5F;&amp;#x6709;&amp;#x5F88;&amp;#x591A;&amp;#xFF0C;&amp;#x8FD9;&amp;#x91CC;&amp;#x8BB0;&amp;#x4E0B;&amp;#x6211;&amp;#x6240;&amp;#x7528;&amp;#x7684;&amp;#x6709;&amp;#x6548;&amp;#x7684;&amp;#x65B9;&amp;#x6848;&amp;#x7559;&amp;#x4E2A;&amp;#x5E95;&amp;#x4EE5;&amp;#x5907;&amp;#x7528;&amp;#x5427;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x8FDB;&amp;#x884C;&amp;#x5230;&amp;#x7B2C;&amp;#x56DB;&amp;#x6B65;&amp;#x65F6;&amp;#xFF0C;&amp;#x6267;&amp;#x884C;&lt;code&gt;fastboot devices&lt;/code&gt;&amp;#x67E5;&amp;#x8BE2;&amp;#x4E0D;&amp;#x5230;&amp;#x8BBE;&amp;#x5907;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt; &amp;#x9996;&amp;#x5148;&amp;#x539F;&amp;#x56E0;&amp;#x4E3A;&amp;#x9A71;&amp;#x52A8;&amp;#x672A;&amp;#x5B89;&amp;#x88C5;&amp;#xFF0C;&amp;#x5728;&amp;#x8BBE;&amp;#x5907;&amp;#x7BA1;&amp;#x7406;&amp;#x5668;&amp;#x4E2D;&lt;code&gt;&amp;#x53F3;&amp;#x952E;Android&lt;/code&gt;&amp;#xFF0C;&amp;#x4F9D;&amp;#x6B21;&amp;#x9009;&amp;#x62E9;&lt;code&gt;&amp;#x66F4;&amp;#x65B0;&amp;#x9A71;&amp;#x52A8;&amp;#x7A0B;&amp;#x5E8F;&amp;#x8F6F;&amp;#x4EF6;&lt;/code&gt;&amp;#x3001;&lt;code&gt;&amp;#x6D4F;&amp;#x89C8;&amp;#x8BA1;&amp;#x7B97;&amp;#x673A;&amp;#x4EE5;&amp;#x67E5;&amp;#x627E;&amp;#x9A71;&amp;#x52A8;&amp;#x7A0B;&amp;#x5E8F;&amp;#x8F6F;&amp;#x4EF6;&lt;/code&gt;&amp;#x3001;&lt;code&gt;&amp;#x4ECE;&amp;#x8BA1;&amp;#x7B97;&amp;#x673A;&amp;#x7684;&amp;#x8BBE;&amp;#x5907;&amp;#x9A71;&amp;#x52A8;&amp;#x7A0B;&amp;#x5E8F;&amp;#x5217;&amp;#x8868;&amp;#x4E2D;&amp;#x9009;&amp;#x62E9;&lt;/code&gt;&amp;#x3001;&lt;code&gt;Android Phone&lt;/code&gt;&amp;#x3001;&lt;code&gt;Android Bootloader Interface&lt;/code&gt;&amp;#xFF0C;&amp;#x5B89;&amp;#x88C5;&amp;#x597D;&amp;#x9A71;&amp;#x52A8;&amp;#xFF0C;&amp;#x518D;&amp;#x6B21;&amp;#x6267;&amp;#x884C;&lt;code&gt;fastboot devices&lt;/code&gt;&amp;#x65F6;&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x987A;&amp;#x5229;&amp;#x627E;&amp;#x5230;&amp;#x8BBE;&amp;#x5907;&amp;#x4E86;&amp;#x3002;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x6559;&amp;#x7A0B;&lt;a href=&#34;https://wiki.pixelexperience.org/devices/kebab/install/#pre-install-instructions&#34;&gt;pre-install instructions&lt;/a&gt;&amp;#x90E8;&amp;#x5206;&amp;#x63D0;&amp;#x5230;&lt;code&gt;copy-partitions-20210323_1922.zip&lt;/code&gt;&amp;#x6587;&amp;#x4EF6;&amp;#x65E0;&amp;#x6CD5;&amp;#x4E0B;&amp;#x8F7D;&lt;/p&gt;
+&lt;p&gt; &amp;#x539F;&amp;#x6587;&amp;#x4EF6;&amp;#x6240;&amp;#x5728;repo&amp;#x4E2D;&amp;#x6CA1;&amp;#x6709;&amp;#x627E;&amp;#x5230;&amp;#x8FD9;&amp;#x4E2A;&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x53EF;&amp;#x80FD;&amp;#x662F;&amp;#x540E;&amp;#x6765;&amp;#x66F4;&amp;#x6539;&amp;#x65F6;&amp;#x5F04;&amp;#x9519;&amp;#x4E86;&amp;#x5427;&amp;#x3002;&amp;#x8FD9;&amp;#x91CC;&amp;#x653E;&amp;#x4E00;&amp;#x4E2A;&lt;a href=&#34;https://androidfilehost.com/?fid=2188818919693768129&#34;&gt;&amp;#x53EF;&amp;#x4FE1;&amp;#x7684;&amp;#x6587;&amp;#x4EF6;&amp;#x6E90;&lt;/a&gt;&amp;#xFF0C;&amp;#x4F7F;&amp;#x7528;&amp;#x4E00;&amp;#x5207;&amp;#x6B63;&amp;#x5E38;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;PE&amp;#x5B98;&amp;#x65B9;&amp;#x63D0;&amp;#x4F9B;&amp;#x7684;recovery&amp;#x955C;&amp;#x50CF;&amp;#x65E0;&amp;#x6CD5;&amp;#x5237;&amp;#x5165;Pixel Experience&amp;#x56FA;&amp;#x4EF6;&amp;#xFF0C;&amp;#x624B;&amp;#x673A;&amp;#x7AEF;&amp;#x8FD4;&amp;#x56DE;&amp;#x7684;&amp;#x9519;&amp;#x8BEF;&amp;#x7801;&amp;#x4E3A;&lt;code&gt;error in /sideload/package.zip (status 1)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt; &amp;#x8FD9;&amp;#x4E2A;&amp;#x539F;&amp;#x56E0;&amp;#x6211;&amp;#x4E5F;&amp;#x65E0;&amp;#x4ECE;&amp;#x5F97;&amp;#x77E5;&amp;#x4E86;&amp;#xFF0C;&amp;#x5728;xda&amp;#x4E0A;&amp;#x8349;&amp;#x8349;&amp;#x770B;&amp;#x4E86;&amp;#x4E00;&amp;#x773C;&amp;#x5C31;&amp;#x6539;&amp;#x7528;&lt;a href=&#34;https://twrp.me/&#34;&gt;twrp recovery&lt;/a&gt;&amp;#x8FDB;&amp;#x884C;&amp;#x5237;&amp;#x5165;&amp;#x4E86;&amp;#xFF0C;&amp;#x4E00;&amp;#x5207;&amp;#x6B63;&amp;#x5E38;&amp;#x3002;&amp;#x867D;&amp;#x7136;&amp;#x5728;PE&amp;#x5B98;&amp;#x7F51;&amp;#x7684;&amp;#x56FA;&amp;#x4EF6;changelog&amp;#x4E2D;&amp;#x662F;&amp;#x63D0;&amp;#x5230;&amp;#x7528;PE&amp;#x7684;recovery&amp;#x8FDB;&amp;#x884C;&amp;#x5237;&amp;#x5165;^.^&lt;/p&gt;
+ &lt;img src=&#34;/img/PE.png&#34; alt=&#34;Use PE recovery to flash the build.&#34;&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x6700;&amp;#x540E;&amp;#x4E00;&amp;#x4E2A;&amp;#x95EE;&amp;#x9898;&amp;#x7EAF;&amp;#x7CB9;&amp;#x662F;&amp;#x81EA;&amp;#x5DF1;&amp;#x624B;&amp;#x8D31;&amp;#x4E86;&amp;#x5C5E;&amp;#x4E8E;&amp;#xFF0C;&amp;#x4E0D;&amp;#x8981;&amp;#x56DE;&amp;#x9501;bootloader&amp;#xFF01;&lt;/p&gt;
+&lt;p&gt; &amp;#x5B98;&amp;#x65B9;&amp;#x6559;&amp;#x7A0B;&lt;a href=&#34;https://wiki.pixelexperience.org/devices/kebab/install/#post-install-instructions&#34;&gt;Post-install instructions&lt;/a&gt;&amp;#x4E2D;&amp;#x63D0;&amp;#x5230;&amp;#x4E86;&amp;#x5237;&amp;#x5165; &lt;code&gt;avb_custom_key&lt;/code&gt;&amp;#x540E;&amp;#x53EF;&amp;#x56DE;&amp;#x9501;&amp;#xFF0C;&amp;#x5207;&amp;#x8BB0;&amp;#x5207;&amp;#x8BB0;&amp;#x8981;&amp;#x786E;&amp;#x8BA4;&amp;#x6210;&amp;#x529F;&amp;#x5237;&amp;#x5165;&amp;#x540E;&amp;#x518D;&amp;#x56DE;&amp;#x9501;&amp;#xFF01;&amp;#x6628;&amp;#x5929;avb_custom_key&amp;#x4E0B;&amp;#x8F7D;&amp;#x5931;&amp;#x8D25;&amp;#xFF0C;&amp;#x5F97;&amp;#x5230;&amp;#x7684;&amp;#x53EA;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x7A7A;&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x6211;&amp;#x6CA1;&amp;#x6709;&amp;#x67E5;&amp;#x770B;&amp;#x662F;&amp;#x5426;&amp;#x6210;&amp;#x529F;&amp;#x5237;&amp;#x5165;&amp;#x76F4;&amp;#x63A5;&amp;#x8FDB;&amp;#x884C;&amp;#x4E86;&amp;#x56DE;&amp;#x9501;&amp;#xFF0C;&amp;#x7ED3;&amp;#x679C;&amp;#x81EA;&amp;#x7136;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x9C9C;&amp;#x8273;&amp;#x7684;&amp;#x7EA2;&amp;#x8272;&amp;#x611F;&amp;#x53F9;&amp;#x53F7;&amp;#xFF0C;&amp;#x548C;&amp;#x90A3;&amp;#x53E5;&amp;#x4EE4;&amp;#x4EBA;&amp;#x7A92;&amp;#x606F;&amp;#x7684;&amp;quot;your device is corrupt. It can&amp;apos;t be trusted and will not boot&amp;quot;&lt;/p&gt;
+&lt;p&gt; &amp;#x5982;&amp;#x679C;&amp;#x771F;&amp;#x7684;&amp;#x50CF;&amp;#x6211;&amp;#x4E00;&amp;#x6837;&amp;#x624B;&amp;#x8D31;&amp;#x56DE;&amp;#x9501;&amp;#x4E86;&amp;#xFF0C;&amp;#x5148;&amp;#x522B;&amp;#x6025;&amp;#xFF0C;&amp;#x6211;&amp;#x6628;&amp;#x5929;&amp;#x4E00;&amp;#x901A;&amp;#x64CD;&amp;#x4F5C;&amp;#xFF0C;&amp;#x5C45;&amp;#x7136;&amp;#x8FDB;&amp;#x5165;&amp;#x4E86;fastboot&amp;#x6A21;&amp;#x5F0F;&amp;#xFF0C;&amp;#x7136;&amp;#x540E;&amp;#x53C8;&amp;#x76F4;&amp;#x63A5;&amp;#x89E3;&amp;#x9501;&amp;#x4E86;&amp;#x3002;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#x6B65;&amp;#x9AA4;&amp;#x5982;&amp;#x4E0B;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;power&lt;/code&gt;+&lt;code&gt;volume up&lt;/code&gt;&amp;#x5F7B;&amp;#x5E95;&amp;#x5173;&amp;#x673A;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;volume down&lt;/code&gt;+&lt;code&gt;volume up&lt;/code&gt;&amp;#xFF0C;&amp;#x518D;&amp;#x63D2;&amp;#x5165;&amp;#x6570;&amp;#x636E;&amp;#x7EBF;&amp;#xFF0C;&amp;#x5C31;&amp;#x8FDB;&amp;#x5165;fastboot&amp;#x6A21;&amp;#x5F0F;&amp;#x4E86;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt; &amp;#x8FD9;&amp;#x53EA;&amp;#x662F;&amp;#x6628;&amp;#x5929;&amp;#x4E71;&amp;#x5C1D;&amp;#x8BD5;&amp;#x5076;&amp;#x7136;&amp;#x83B7;&amp;#x5F97;&amp;#x7684;&amp;#x4E00;&amp;#x4E2A;&amp;#x89E3;&amp;#x51B3;&amp;#x65B9;&amp;#x6CD5;&amp;#x3002;&amp;#x5982;&amp;#x679C;&amp;#x5982;&amp;#x4E0A;&amp;#x64CD;&amp;#x4F5C;&amp;#x672A;&amp;#x80FD;&amp;#x987A;&amp;#x5229;&amp;#x8FDB;&amp;#x5165;fastboot&amp;#x6A21;&amp;#x5F0F;&amp;#xFF0C;&amp;#x5EFA;&amp;#x8BAE;&amp;#x8FD8;&amp;#x662F;&amp;#x7A33;&amp;#x59A5;&amp;#x8D77;&amp;#x89C1;&amp;#x9AD8;&amp;#x901A;9008&amp;#x5237;&amp;#x673A;&amp;#x4E3A;&amp;#x597D;&amp;#x3002;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a href=&#34;#shi-yong-zhong-de-wen-ti&#34; class=&#34;header-anchor&#34;&gt;#&lt;/a&gt;&lt;span id=&#34;shi-yong-zhong-de-wen-ti&#34;&gt;&amp;#x4F7F;&amp;#x7528;&amp;#x4E2D;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&lt;/span&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x901A;&amp;#x8BDD;&amp;#x5F55;&amp;#x97F3;&lt;/p&gt;
+&lt;p&gt; &amp;#x539F;&amp;#x751F;&amp;#x5B89;&amp;#x5353;&amp;#x636E;&amp;#x8BF4;&amp;#x662F;&amp;#x8981;&amp;#x5F00;&amp;#x59CB;&amp;#x652F;&amp;#x6301;&amp;#x8FD9;&amp;#x4E00;&amp;#x9879;&amp;#x4E86;&amp;#xFF0C;&amp;#x4E0D;&amp;#x8FC7;&amp;#x8FD9;&amp;#x6B21;&amp;#x5237;&amp;#x5165;&amp;#x7684;PE Plus&amp;#x8FD8;&amp;#x6CA1;&amp;#x6709;&amp;#x8FD9;&amp;#x4E00;&amp;#x529F;&amp;#x80FD;&amp;#xFF0C;&amp;#x501F;&amp;#x52A9;magisk&amp;#x6A21;&amp;#x5757;&lt;a href=&#34;https://callrecorder.skvalex.com/get&#34;&gt;Call Recorder - SKVALEX&lt;/a&gt;&amp;#x53EF;&amp;#x4EE5;&amp;#x5F88;&amp;#x597D;&amp;#x5730;&amp;#x89E3;&amp;#x51B3;&amp;#x8FD9;&amp;#x4E00;&amp;#x95EE;&amp;#x9898;&amp;#x3002;&amp;#x76F8;&amp;#x4F3C;&amp;#x7684;&amp;#x89E3;&amp;#x51B3;&amp;#x65B9;&amp;#x6848;&amp;#x4E5F;&amp;#x5F88;&amp;#x591A;&amp;#xFF0C;&amp;#x4E0D;&amp;#x505A;&amp;#x8D58;&amp;#x8FF0;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x77ED;&amp;#x4FE1;&amp;#x62E6;&amp;#x622A;&lt;/p&gt;
+&lt;p&gt; &amp;#x8FD9;&amp;#x662F;&amp;#x539F;&amp;#x751F;&amp;#x5B89;&amp;#x5353;&amp;#x6700;&amp;#x5927;&amp;#x7684;&amp;#x75DB;&amp;#x70B9;&amp;#x4E86;&amp;#xFF0C;&amp;#x76EE;&amp;#x524D;&amp;#x8FD8;&amp;#x6CA1;&amp;#x6709;&amp;#x592A;&amp;#x597D;&amp;#x7684;&amp;#x89E3;&amp;#x51B3;&amp;#x65B9;&amp;#x6CD5;&amp;#xFF0C;&amp;#x5F85;&amp;#x5B9A;&amp;#x2026;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x53D6;&amp;#x6D88;Google Play&amp;#x5BF9;&amp;#x7279;&amp;#x5B9A;&amp;#x5E94;&amp;#x7528;&amp;#x7684;&amp;#x66F4;&amp;#x65B0;&amp;#x63D0;&amp;#x9192;&lt;/p&gt;
+&lt;p&gt; Google Play&amp;#x4E00;&amp;#x4E2A;&amp;#x6211;&amp;#x4E0D;&amp;#x592A;&amp;#x63A5;&amp;#x53D7;&amp;#x7684;&amp;#x7279;&amp;#x6027;&amp;#x5C31;&amp;#x662F;&amp;#x4E0D;&amp;#x80FD;&amp;#x5FFD;&amp;#x7565;&amp;#x5E94;&amp;#x7528;&amp;#x66F4;&amp;#x65B0;&amp;#x4E86;&amp;#x3002;magisk&amp;#x7684;&amp;#x6A21;&amp;#x5757;&amp;#x5E93;&amp;#x4E2D;&amp;#x7684;&lt;a href=&#34;https://github.com/Magisk-Modules-Repo/Detach&#34;&gt;Detach&lt;/a&gt;&amp;#x80FD;&amp;#x591F;&amp;#x5F88;&amp;#x597D;&amp;#x7684;&amp;#x6EE1;&amp;#x8DB3;&amp;#x8FD9;&amp;#x4E00;&amp;#x8981;&amp;#x6C42;&amp;#x3002;&amp;#x4F7F;&amp;#x7528;&amp;#x53CA;&amp;#x64CD;&amp;#x4F5C;&amp;#x8981;&amp;#x6C42;&amp;#x5728;&amp;#x5B98;&amp;#x65B9;github&amp;#x4ED3;&amp;#x5E93;&amp;#x4E2D;&amp;#x6709;&amp;#x5F88;&amp;#x6E05;&amp;#x6670;&amp;#x7684;&amp;#x4ECB;&amp;#x7ECD;&amp;#xFF0C;&amp;#x4E0D;&amp;#x505A;&amp;#x8D58;&amp;#x8FF0;&amp;#x3002;&amp;#x9700;&amp;#x8981;&amp;#x6CE8;&amp;#x610F;&amp;#x7684;&amp;#x4E00;&amp;#x70B9;&amp;#x662F;&amp;#xFF0C;magisk&amp;#x5B89;&amp;#x88C5;Detach&amp;#x9700;&amp;#x8981;&amp;#x53E6;&amp;#x4E00;&amp;#x6A21;&amp;#x5757;Busybox for Android NDK&amp;#x4F5C;&amp;#x57FA;&amp;#x7840;&amp;#xFF0C;&amp;#x8FD9;&amp;#x4E00;&amp;#x6A21;&amp;#x5757;&amp;#x5728;magisk&amp;#x6A21;&amp;#x5757;&amp;#x5E93;&amp;#x4E2D;&amp;#x76F4;&amp;#x63A5;&amp;#x4E0B;&amp;#x8F7D;&amp;#x5B89;&amp;#x88C5;&amp;#x5373;&amp;#x53EF;&amp;#x3002;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x5E94;&amp;#x7528;&amp;#x5217;&amp;#x8868;&amp;#x9690;&amp;#x85CF;&lt;/p&gt;
+&lt;p&gt; &amp;#x4E5F;&amp;#x662F;&amp;#x5237;&amp;#x673A;&amp;#x73A9;&amp;#x5BB6;&amp;#x7684;&amp;#x8001;&amp;#x670B;&amp;#x53CB;&amp;#x4E86;&amp;#xFF0C;&amp;#x4E3B;&amp;#x8981;&amp;#x662F;&amp;#x4E3A;&amp;#x4E86;&amp;#x907F;&amp;#x514D;&amp;#x5E94;&amp;#x7528;&amp;#x8BFB;&amp;#x53D6;&amp;#x5DF2;&amp;#x5B89;&amp;#x88C5;&amp;#x5E94;&amp;#x7528;&amp;#x5217;&amp;#x8868;&amp;#x4ECE;&amp;#x800C;&amp;#x751F;&amp;#x6210;&amp;#x7528;&amp;#x6237;&amp;#x753B;&amp;#x50CF;&amp;#xFF0C;&amp;#x4E00;&amp;#x5B9A;&amp;#x7A0B;&amp;#x5EA6;&amp;#x4E0A;&amp;#x4E5F;&amp;#x662F;&amp;#x9690;&amp;#x79C1;&amp;#x4FDD;&amp;#x62A4;&amp;#x7684;&amp;#x4E00;&amp;#x79CD;&amp;#x65B9;&amp;#x5F0F;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt; &amp;#x6E90;&amp;#x4ED3;&amp;#x5E93;&amp;#x5730;&amp;#x5740;&amp;#xFF1A;&lt;a href=&#34;https://github.com/Dr-TSNG/Hide-My-Applist&#34;&gt;github&lt;/a&gt;&amp;#xFF0C;&amp;#x8FD9;&amp;#x9879;&amp;#x529F;&amp;#x80FD;&amp;#x8981;&amp;#x4ECE;LSPosed&amp;#x4E2D;&amp;#x5B89;&amp;#x88C5;&amp;#xFF0C;&amp;#x6309;&amp;#x7167;&amp;#x8981;&amp;#x6C42;&amp;#x4E00;&amp;#x6B65;&amp;#x6B65;&amp;#x4E0B;&amp;#x8F7D;apk&amp;#x5B89;&amp;#x88C5;&amp;#xFF0C;&amp;#x5E76;&amp;#x4ECE;&amp;#x8F6F;&amp;#x4EF6;&amp;#x4E2D;&amp;#x5B89;&amp;#x88C5;&amp;#x9700;&amp;#x8981;&amp;#x7684;magisk&amp;#x6A21;&amp;#x5757;&amp;#xFF0C;&amp;#x8BBE;&amp;#x5B9A;&amp;#x767D;/&amp;#x9ED1;&amp;#x540D;&amp;#x5355;&amp;#x5E76;&amp;#x5C06;&amp;#x89C4;&amp;#x5219;&amp;#x4F5C;&amp;#x7528;&amp;#x4E8E;&amp;#x5E94;&amp;#x7528;&amp;#x5373;&amp;#x53EF;&amp;#x3002;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&amp;#x66F4;&amp;#x65B9;&amp;#x4FBF;&amp;#x7684;&amp;#x8054;&amp;#x7F51;&amp;#x63A7;&amp;#x5236;&lt;/p&gt;
+&lt;p&gt; &amp;#x76F8;&amp;#x6BD4;&amp;#x4E8E;&amp;#x5B89;&amp;#x5353;&amp;#x81EA;&amp;#x5E26;&amp;#x7684;&amp;#x8054;&amp;#x7F51;&amp;#x63A7;&amp;#x5236;&amp;#x9700;&amp;#x8981;&amp;#x4E00;&amp;#x4E2A;&amp;#x4E00;&amp;#x4E2A;&amp;#x8F6F;&amp;#x4EF6;&amp;#x5730;&amp;#x8FDB;&amp;#x884C;&amp;#x7BA1;&amp;#x7406;&amp;#xFF0C;&amp;#x5229;&amp;#x7528;&lt;a href=&#34;https://github.com/ukanth/afwall/&#34;&gt;AFWall+&lt;/a&gt;&amp;#x8FDB;&amp;#x884C;&amp;#x8054;&amp;#x7F51;&amp;#x63A7;&amp;#x5236;&amp;#x5C31;&amp;#x5BB9;&amp;#x6613;&amp;#x4E14;&amp;#x6E05;&amp;#x6670;&amp;#x5F97;&amp;#x591A;&amp;#x4E86;&amp;#x3002;&amp;#x8FD9;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x53EF;&amp;#x4EE5;&amp;#x4ECE;Google Play&amp;#x76F4;&amp;#x63A5;&amp;#x83B7;&amp;#x53D6;&amp;#x7684;&amp;#x5E94;&amp;#x7528;&amp;#x3002;&amp;#x4F7F;&amp;#x7528;&amp;#x4E5F;&amp;#x975E;&amp;#x5E38;&amp;#x76F4;&amp;#x89C2;&amp;#xFF0C;&amp;#x52FE;&amp;#x9009;&amp;#x60F3;&amp;#x8981;&amp;#x9650;&amp;#x5236;&amp;#x7684;&amp;#x8054;&amp;#x7F51;&amp;#x529F;&amp;#x80FD;&amp;#xFF08;&amp;#x5C40;&amp;#x57DF;&amp;#x7F51;&amp;#x3001;WiFi&amp;#x3001;&amp;#x79FB;&amp;#x52A8;&amp;#x6570;&amp;#x636E;&amp;#xFF09;&amp;#xFF0C;&amp;#x518D;&amp;#x70B9;&amp;#x51FB;&amp;#x53F3;&amp;#x4E0A;&amp;#x89D2;&amp;#x5E94;&amp;#x7528;&amp;#x89C4;&amp;#x5219;&amp;#x5373;&amp;#x53EF;&amp;#x3002;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
