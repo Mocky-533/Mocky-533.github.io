@@ -7,11 +7,11 @@
         <language>en,zh-cn,default</language>
         <pubDate>Sat, 22 Oct 2022 22:33:23 +0800</pubDate>
         <lastBuildDate>Sat, 22 Oct 2022 22:33:23 +0800</lastBuildDate>
-        <category>python</category>
-        <category>Pixel Experience</category>
-        <category>shell</category>
-        <category>Summary</category>
         <category>Review</category>
+        <category>shell</category>
+        <category>python</category>
+        <category>Summary</category>
+        <category>Pixel Experience</category>
         <category>front end</category>
         <item>
             <guid isPermalink="true">https://www.mechgerald.site/2022/xpathNotes</guid>
@@ -50,7 +50,7 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;No tutorial could ever teach you everything about it. Gonna have to try things when it comes to real problems. Sometimes you need to locate elements one by one even if they are perfectly aligned in html viewer like web browser. Be patient.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;em&gt;When encountered with new problems, of course.&lt;/em&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;In the case of new problems, of course.&lt;/em&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
  ]]></description>
