@@ -2,21 +2,22 @@
 <rss version="2.0">
     <channel>
         <title>Gerald&#39;s Cabin • Posts by &#34;front end&#34; tag</title>
-        <link>https://www.mechgerald.site</link>
+        <link>https://www.mechgerald.website</link>
         <description></description>
         <language>en,zh-cn,default</language>
         <pubDate>Sat, 22 Oct 2022 22:33:23 +0800</pubDate>
         <lastBuildDate>Sat, 22 Oct 2022 22:33:23 +0800</lastBuildDate>
-        <category>Review</category>
-        <category>shell</category>
-        <category>python</category>
-        <category>Summary</category>
         <category>Pixel Experience</category>
+        <category>python</category>
+        <category>shell</category>
+        <category>Summary</category>
+        <category>Review</category>
         <category>front end</category>
+        <category>Travel</category>
         <item>
-            <guid isPermalink="true">https://www.mechgerald.site/2022/xpathNotes</guid>
+            <guid isPermalink="true">https://www.mechgerald.website/2022/xpathNotes</guid>
             <title>Xpath Notes</title>
-            <link>https://www.mechgerald.site/2022/xpathNotes</link>
+            <link>https://www.mechgerald.website/2022/xpathNotes</link>
             <category>python</category>
             <category>front end</category>
             <pubDate>Sat, 22 Oct 2022 22:33:23 +0800</pubDate>
@@ -56,9 +57,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.mechgerald.site/2022/zh-cn/xpathNotes</guid>
+            <guid isPermalink="true">https://www.mechgerald.website/2022/zh-cn/xpathNotes</guid>
             <title>Xpath学习笔记</title>
-            <link>https://www.mechgerald.site/2022/zh-cn/xpathNotes</link>
+            <link>https://www.mechgerald.website/2022/zh-cn/xpathNotes</link>
             <category>python</category>
             <category>front end</category>
             <pubDate>Sat, 22 Oct 2022 22:33:23 +0800</pubDate>
