@@ -7,13 +7,13 @@
         <language>en,zh-cn,default</language>
         <pubDate>Sun, 10 Mar 2024 10:46:00 +0800</pubDate>
         <lastBuildDate>Sun, 10 Mar 2024 10:46:00 +0800</lastBuildDate>
-        <category>python</category>
-        <category>Review</category>
-        <category>Travel</category>
         <category>Summary</category>
         <category>Pixel Experience</category>
+        <category>Review</category>
         <category>shell</category>
+        <category>python</category>
         <category>front end</category>
+        <category>Travel</category>
         <item>
             <guid isPermalink="true">https://www.mechgerald.website/2024/zh-cn/Flowers</guid>
             <title>掬水月在手，弄花香满衣</title>
@@ -494,11 +494,11 @@
 &lt;tr&gt;
 &lt;td&gt;19&lt;/td&gt;
 &lt;td&gt;&amp;#x82B8;&amp;#x85B9;&amp;#xFF08;&amp;#x6CB9;&amp;#x83DC;&amp;#x82B1;&amp;#xFF09;&lt;/td&gt;
+&lt;td&gt;&amp;#x52A0;&amp;#x6CB9;&lt;/td&gt;
 &lt;td&gt;&amp;#x96E8;&amp;#x6C34;&amp;#x6D17;&amp;#x6625;&amp;#x5BB9;&amp;#xFF0C;&amp;#x5E73;&amp;#x7530;&amp;#x5DF2;&amp;#x89C1;&amp;#x9F99;&amp;#x3002;&lt;/td&gt;
 &lt;td&gt;&amp;#x5510;&lt;/td&gt;
 &lt;td&gt;&amp;#x5143;&amp;#x7A39;&lt;/td&gt;
 &lt;td&gt;&amp;#x7528;&amp;#x5EFF;&amp;#x56DB;&amp;#x6C14;&amp;#x8BD7;&amp;#xB7;&amp;#x96E8;&amp;#x6C34;&amp;#x6B63;&amp;#x6708;&amp;#x4E2D;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;20&lt;/td&gt;
@@ -692,6 +692,78 @@
 &lt;td&gt;&amp;#x91D1;&lt;/td&gt;
 &lt;td&gt;&amp;#x9AD8;&amp;#x58EB;&amp;#x8C08;&lt;/td&gt;
 &lt;td&gt;&amp;#x68E3;&amp;#x68E0;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;&amp;#x661F;&amp;#x82B1;&amp;#x51E4;&amp;#x68A8;&lt;/td&gt;
+&lt;td&gt;&amp;#x9E3F;&amp;#x8FD0;&amp;#x5F53;&amp;#x5934;&amp;#x3001;&amp;#x597D;&amp;#x8FD0;&amp;#x6765;&amp;#x4E34;&lt;/td&gt;
+&lt;td&gt;&amp;#x6211;&amp;#x89C9;&amp;#x541B;&amp;#x975E;&amp;#x6C60;&amp;#x4E2D;&amp;#x7269;&amp;#xFF0C;&amp;#x54AB;&amp;#x5C3A;&amp;#x86DF;&amp;#x9F99;&amp;#x4E91;&amp;#x96E8;&amp;#x3002;&lt;/td&gt;
+&lt;td&gt;&amp;#x5B8B;&lt;/td&gt;
+&lt;td&gt;&amp;#x8F9B;&amp;#x5F03;&amp;#x75BE;&lt;/td&gt;
+&lt;td&gt;&amp;#x8D3A;&amp;#x65B0;&amp;#x90CE;&amp;#xB7;&amp;#x548C;&amp;#x5F90;&amp;#x65AF;&amp;#x8FDC;&amp;#x4E0B;&amp;#x7B2C;&amp;#x8C22;&amp;#x8BF8;&amp;#x516C;&amp;#x8F7D;&amp;#x9152;&amp;#x76F8;&amp;#x8BBF;&amp;#x97F5;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;&amp;#x96EA;&amp;#x6EF4;&amp;#x82B1;&lt;/td&gt;
+&lt;td&gt;&amp;#x5E0C;&amp;#x671B;&lt;/td&gt;
+&lt;td&gt;&amp;#x4E00;&amp;#x6811;&amp;#x65B0;&amp;#x683D;&amp;#x76CA;&amp;#x56DB;&amp;#x90BB;&amp;#xFF0C;&amp;#x91CE;&amp;#x592B;&amp;#x5982;&amp;#x5230;&amp;#x65E7;&amp;#x5C71;&amp;#x6625;&amp;#x3002;&lt;/td&gt;
+&lt;td&gt;&amp;#x5510;&lt;/td&gt;
+&lt;td&gt;&amp;#x4E8E;&amp;#x9E44;&lt;/td&gt;
+&lt;td&gt;&amp;#x79CD;&amp;#x6811;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;td&gt;&amp;#x8774;&amp;#x8776;&amp;#x82B1;&lt;/td&gt;
+&lt;td&gt;&amp;#x65E0;&amp;#x6761;&amp;#x4EF6;&amp;#x7684;&amp;#x7231;&lt;/td&gt;
+&lt;td&gt;&amp;#x51ED;&amp;#x9AD8;&amp;#x81EA;&amp;#x65AD;&amp;#x3002;&amp;#x9E3F;&amp;#x96C1;&amp;#x6765;&amp;#x65F6;&amp;#xFF0C;&amp;#x65E0;&amp;#x9650;&amp;#x601D;&amp;#x91CF;&amp;#x3002;&lt;/td&gt;
+&lt;td&gt;&amp;#x5B8B;&lt;/td&gt;
+&lt;td&gt;&amp;#x664F;&amp;#x6B8A;&lt;/td&gt;
+&lt;td&gt;&amp;#x8BC9;&amp;#x8877;&amp;#x60C5;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;&amp;#x9ED1;&amp;#x5FC3;&amp;#x83CA;&lt;/td&gt;
+&lt;td&gt;&amp;#x72EC;&amp;#x6811;&amp;#x4E00;&amp;#x5E1C;&amp;#x7684;&amp;#x7231;&lt;/td&gt;
+&lt;td&gt;&amp;#x4E0D;&amp;#x662F;&amp;#x82B1;&amp;#x4E2D;&amp;#x504F;&amp;#x7231;&amp;#x83CA;&amp;#xFF0C;&amp;#x6B64;&amp;#x82B1;&amp;#x5F00;&amp;#x5C3D;&amp;#x66F4;&amp;#x65E0;&amp;#x82B1;&amp;#x3002;&lt;/td&gt;
+&lt;td&gt;&amp;#x5510;&lt;/td&gt;
+&lt;td&gt;&amp;#x5143;&amp;#x7A39;&lt;/td&gt;
+&lt;td&gt;&amp;#x83CA;&amp;#x82B1;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;td&gt;&amp;#x7C89;&amp;#x56E2;&amp;#x8537;&amp;#x8587;&lt;/td&gt;
+&lt;td&gt;&amp;#x7F8E;&amp;#x4E3D;&amp;#x7684;&amp;#x9082;&amp;#x9005;&lt;/td&gt;
+&lt;td&gt;&amp;#x6C34;&amp;#x6676;&amp;#x5E18;&amp;#x52A8;&amp;#x5FAE;&amp;#x98CE;&amp;#x8D77;&amp;#xFF0C;&amp;#x6EE1;&amp;#x67B6;&amp;#x8537;&amp;#x8587;&amp;#x4E00;&amp;#x9662;&amp;#x9999;&amp;#x3002;&lt;/td&gt;
+&lt;td&gt;&amp;#x5510;&lt;/td&gt;
+&lt;td&gt;&amp;#x9AD8;&amp;#x9A88;&lt;/td&gt;
+&lt;td&gt;&amp;#x5C71;&amp;#x4EAD;&amp;#x590F;&amp;#x65E5;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;&amp;#x9E64;&amp;#x9876;&amp;#x5170;&lt;/td&gt;
+&lt;td&gt;&amp;#x52FF;&amp;#x5FD8;&amp;#x7B49;&amp;#x5019;&lt;/td&gt;
+&lt;td&gt;&amp;#x4F3C;&amp;#x6B64;&amp;#x661F;&amp;#x8FB0;&amp;#x975E;&amp;#x6628;&amp;#x591C;&amp;#xFF0C;&amp;#x4E3A;&amp;#x8C01;&amp;#x98CE;&amp;#x9732;&amp;#x7ACB;&amp;#x4E2D;&amp;#x5BB5;&amp;#x3002;&lt;/td&gt;
+&lt;td&gt;&amp;#x6E05;&lt;/td&gt;
+&lt;td&gt;&amp;#x9EC4;&amp;#x666F;&amp;#x4EC1;&lt;/td&gt;
+&lt;td&gt;&amp;#x7EEE;&amp;#x6000;&amp;#x5341;&amp;#x516D;&amp;#x9996;&amp;#xB7;&amp;#x5176;&amp;#x5341;&amp;#x4E94;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;17&lt;/td&gt;
+&lt;td&gt;&amp;#x9999;&amp;#x96EA;&amp;#x7403;&lt;/td&gt;
+&lt;td&gt;&amp;#x6E05;&amp;#x65B0;&amp;#x3001;&amp;#x8212;&amp;#x7545;&lt;/td&gt;
+&lt;td&gt;&amp;#x96E8;&amp;#x6674;&amp;#x4E91;&amp;#x655B;&amp;#xFF0C;&amp;#x70DF;&amp;#x82B1;&amp;#x6FB9;&amp;#x8361;&amp;#xFF0C;&amp;#x9065;&amp;#x5C71;&amp;#x51DD;&amp;#x78A7;&amp;#x3002;&lt;/td&gt;
+&lt;td&gt;&amp;#x5B8B;&lt;/td&gt;
+&lt;td&gt;&amp;#x5B59;&amp;#x9053;&amp;#x7EDA;&lt;/td&gt;
+&lt;td&gt;&amp;#x5C11;&amp;#x5E74;&amp;#x6E38;&amp;#xB7;&amp;#x845B;&amp;#x6C0F;&amp;#x4F84;&amp;#x5973;&amp;#x5B50;&amp;#x544A;&amp;#x5F52;&amp;#xB7;&amp;#x4F5C;&amp;#x5C11;&amp;#x5E74;&amp;#x6E38;&amp;#x9001;&amp;#x4E4B;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;&amp;#x865E;&amp;#x7F8E;&amp;#x4EBA;&lt;/td&gt;
+&lt;td&gt;&amp;#x5962;&amp;#x4F88;&lt;/td&gt;
+&lt;td&gt;&amp;#x5343;&amp;#x9A91;&amp;#x62E5;&amp;#x9AD8;&amp;#x7259;&amp;#xFF0C;&amp;#x4E58;&amp;#x9189;&amp;#x542C;&amp;#x7BAB;&amp;#x9F13;&amp;#xFF0C;&amp;#x541F;&amp;#x8D4F;&amp;#x70DF;&amp;#x971E;&amp;#x3002;&lt;/td&gt;
+&lt;td&gt;&amp;#x5B8B;&lt;/td&gt;
+&lt;td&gt;&amp;#x67F3;&amp;#x6C38;&lt;/td&gt;
+&lt;td&gt;&amp;#x671B;&amp;#x6D77;&amp;#x6F6E;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
  ]]></description>
