@@ -7,13 +7,13 @@
         <language>en,zh-cn,default</language>
         <pubDate>Thu, 21 Oct 2021 17:29:11 +0800</pubDate>
         <lastBuildDate>Thu, 21 Oct 2021 17:29:11 +0800</lastBuildDate>
-        <category>Pixel Experience</category>
-        <category>Review</category>
-        <category>Summary</category>
-        <category>shell</category>
-        <category>python</category>
-        <category>front end</category>
         <category>Travel</category>
+        <category>Review</category>
+        <category>python</category>
+        <category>Summary</category>
+        <category>Pixel Experience</category>
+        <category>shell</category>
+        <category>front end</category>
         <item>
             <guid isPermalink="true">https://www.mechgerald.website/2021/ipv6</guid>
             <title>Ipv6 Availability Checking Script on Padavan</title>
